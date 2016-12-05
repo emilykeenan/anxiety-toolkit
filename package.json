@@ -1,0 +1,28 @@
+{
+  "name": "anxiety-toolkit",
+  "version": "1.0.0",
+  "description": "A tool for people with anxiety to help manage symptoms in public spaces.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon server/app.js",
+    "start": "node server/app.js",
+    "sass": "node-sass -w server/public/sass/styles.scss -o server/public/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilykeenan/anxiety-toolkit.git"
+  },
+  "author": "Emily Keenan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilykeenan/anxiety-toolkit/issues"
+  },
+  "homepage": "https://github.com/emilykeenan/anxiety-toolkit#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "browser-sync": "^2.18.2",
+    "express": "^4.14.0",
+    "node-sass": "^3.13.0",
+    "pg": "^6.1.0"
+  }
+}
