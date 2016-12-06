@@ -1,6 +1,6 @@
 console.log('hallo world');
 
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('anxietyToolkit', ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -12,7 +12,7 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('/meditation' ,{
       templateUrl: '/views/templates/meditation.html',
       controller: 'MeditationController',
-      controllerAs: 'mdt'
+      controllerAs: 'mc'
     })
     .otherwise({
       redirectTo: 'home'
