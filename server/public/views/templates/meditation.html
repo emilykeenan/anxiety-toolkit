@@ -1,1 +1,15 @@
 <p>meditations here</p>
+<button ng-hide="mc.meditationMode" ng-repeat="meditation in mc.meditations" ng-click="mc.startMeditation(meditation)">{{meditation.subject}}</button>
+
+<div class="affirmation" ng-show="mc.meditationMode">
+  <p>{{mc.selectedMeditation.affirmation1}}</p>
+  <p>{{mc.selectedMeditation.affirmation2}}</p>
+  <p>{{mc.selectedMeditation.affirmation3}}</p>
+  <p>{{mc.selectedMeditation.affirmation4}}</p>
+  <p>{{mc.selectedMeditation.affirmation5}}</p>
+  <p>{{mc.selectedMeditation.affirmation6}}</p>
+  <p>{{mc.selectedMeditation.affirmation7}}</p>
+  <p>{{mc.selectedMeditation.affirmation8}}</p>
+  <p>{{mc.selectedMeditation.affirmation9}}</p>
+  <p>{{mc.selectedMeditation.affirmation10}}</p>
+</div>

@@ -5,6 +5,7 @@ app.controller('MeditationController', ["$http", function($http) {
   var self = this;
   self.meditations = [];
   self.meditationMode = false;
+  self.selectedMeditation = '';
 
   getMeditations();
 
@@ -16,7 +17,9 @@ app.controller('MeditationController', ["$http", function($http) {
     });
   }; // end getMeditations function
 
-  this.startMeditation = function() {
+  self.startMeditation = function(meditation) {
+    self.selectedMeditation = meditation;
+    console.log(self.selectedMeditation);
     self.meditationMode = true;
   }
 
