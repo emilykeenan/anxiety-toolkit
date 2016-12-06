@@ -1,2 +1,10 @@
 body {
   color: magenta; }
+
+.affirmation {
+  display: none;
+}
+
+.active {
+  display: block;
+}
