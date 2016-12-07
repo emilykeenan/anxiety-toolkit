@@ -1,4 +1,4 @@
-app.controller('MeditationController', ["$http", function($http) {
+app.controller('MeditationController', ['$http', function($http) {
 
   console.log('meditation controller running');
 

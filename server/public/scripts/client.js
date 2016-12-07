@@ -1,13 +1,13 @@
 console.log('hallo world');
 
-var app = angular.module('anxietyToolkit', ['ngRoute', 'ngTouch']);
+var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'ngTouch']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: '/views/templates/home.html',
       controller: 'HomeController',
-      controllerAs: 'home'
+      controllerAs: 'hc'
     })
     .when('/meditation' ,{
       templateUrl: '/views/templates/meditation.html',
