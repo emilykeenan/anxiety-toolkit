@@ -5,7 +5,7 @@ app.controller('MeditationController', ["$http", function($http) {
   var self = this;
   self.meditations = [];
   self.meditationMode = false;
-  self.selectedMeditation = '';
+  self.selectedMeditation = {};
   self.meditationOver = false;
   self.currentMeditation = [];
   self.currentAffirmation = 0;
@@ -42,19 +42,26 @@ app.controller('MeditationController', ["$http", function($http) {
     if(self.currentAffirmation < self.currentMeditation.length - 1) {
       self.currentAffirmation++;
     } else {
-      self.meditationOver = true;
+      self.currentAffirmation = 0;
+    }
+  }
+
+  self.previousMeditation = function() {
+    if (self.currentAffirmation > 0) {
+      self.currentAffirmation--;
+    } else {
+      self.currentAffirmation = 9;
     }
   }
 
   self.endMeditation = function() {
+    var affirmationTag = angular.element( document.querySelector( '.affirmation' ) );
+    affirmationTag.removeClass('active');
+
     self.meditationMode = false;
     self.currentMeditation = [];
     self.currentAffirmation = 0;
-
-  }
-
-  self.restartMediation = function() {
-    self.currentAffirmation = 0;
+    self.selectedMeditation = {};
   }
 
 }]);

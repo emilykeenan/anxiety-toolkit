@@ -1,8 +1,8 @@
 <button ng-hide="mc.meditationMode" ng-repeat="meditation in mc.meditations" ng-click="mc.startMeditation(meditation)">{{meditation.subject}}</button>
 
-<div class="affirmation_container" ng-show="mc.meditationMode">
-  <p ng-class="{active: mc.currentAffirmation == $index}" class="affirmation" ng-repeat="affirmation in mc.currentMeditation">{{affirmation}}</p>
-  <button ng-hide="mc.meditationOver" ng-click="mc.advanceMeditation()">Next</button>
-  <button ng-show="mc.meditationOver" ng-click="mc.endMeditation()">End Meditation</button>
-  <button ng-show="mc.meditationOver" ng-click="mc.restartMeditation()">Restart Meditation</button>
+<div id="affirmationContainer" ng-show="mc.meditationMode">
+  <button ng-click="mc.previousMeditation()"><</button>
+  <button ng-click="mc.advanceMeditation()">></button>
+  <button ng-click="mc.endMeditation()" href="#meditation">End Meditation</button>
+  <p class="active">{{mc.currentMeditation[mc.currentAffirmation]}}</p>
 </div>
