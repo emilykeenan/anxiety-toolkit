@@ -10,19 +10,20 @@ app.controller('MeditationController', ["$http", function($http) {
   self.currentMeditation = [];
   self.currentAffirmation = 0;
 
+  // gets meditations from database
   getMeditations();
 
+  // function to get meditations from the database
   function getMeditations() {
     $http.get('/meditation')
     .then(function(response) {
       self.meditations = response.data;
-      console.log('array of meditations', self.meditations);
     });
   }; // end getMeditations function
 
+  //function to start meditation when a meditation is selected
   self.startMeditation = function(meditation) {
     self.selectedMeditation = meditation;
-    console.log(self.selectedMeditation);
     self.meditationMode = true;
     self.currentMeditation.push(self.selectedMeditation.affirmation1);
     self.currentMeditation.push(self.selectedMeditation.affirmation2);
@@ -34,11 +35,11 @@ app.controller('MeditationController', ["$http", function($http) {
     self.currentMeditation.push(self.selectedMeditation.affirmation8);
     self.currentMeditation.push(self.selectedMeditation.affirmation9);
     self.currentMeditation.push(self.selectedMeditation.affirmation10);
-    console.log(self.currentMeditation);
     self.meditationOver = false;
 
   }
 
+  // function to advance to the next affirmation in meditation
   self.advanceMeditation = function() {
     if(self.currentAffirmation < self.currentMeditation.length - 1) {
       self.currentAffirmation++;
@@ -47,6 +48,7 @@ app.controller('MeditationController', ["$http", function($http) {
     }
   }
 
+  // function to end the current meditation and choose another
   self.endMeditation = function() {
     self.meditationMode = false;
     self.currentMeditation = [];

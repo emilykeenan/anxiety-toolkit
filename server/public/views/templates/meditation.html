@@ -5,6 +5,6 @@
 </div>
 
 <div id="meditationNav" class="meditation_nav" ng-show="mc.meditationMode">
-  <button class="meditation_advance_button" ng-hide="mc.meditationOver" ng-click="mc.advanceMeditation()">></button>
-  <button class="meditation_end_button" ng-click="mc.endMeditation()" href="#meditation">End Meditation</button>
+  <button class="meditation_advance_button" ng-hide="mc.meditationOver" ng-click="mc.advanceMeditation()"><img src="/assets/images/meditationButtonNav.svg" /></button>
+  <button ng-show="mc.meditationOver" class="meditation_end_button" ng-click="mc.endMeditation()">Choose a New Meditation</button>
 </div>
