@@ -36,28 +36,18 @@ app.controller('MeditationController', ["$http", function($http) {
     self.currentMeditation.push(self.selectedMeditation.affirmation10);
     console.log(self.currentMeditation);
     self.meditationOver = false;
+
   }
 
   self.advanceMeditation = function() {
     if(self.currentAffirmation < self.currentMeditation.length - 1) {
       self.currentAffirmation++;
     } else {
-      self.currentAffirmation = 0;
-    }
-  }
-
-  self.previousMeditation = function() {
-    if (self.currentAffirmation > 0) {
-      self.currentAffirmation--;
-    } else {
-      self.currentAffirmation = 9;
+      self.meditationOver = true;
     }
   }
 
   self.endMeditation = function() {
-    var affirmationTag = angular.element( document.querySelector( '.affirmation' ) );
-    affirmationTag.removeClass('active');
-
     self.meditationMode = false;
     self.currentMeditation = [];
     self.currentAffirmation = 0;

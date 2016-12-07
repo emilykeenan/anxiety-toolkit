@@ -1,29 +1,61 @@
+/* HTML ELEMENTS */
 body {
-  color: magenta;
-  font-size: 70px;}
+  background: #E3F6F3;
+  font-size: 70px;
+  height: 100%; }
 
 button {
-  font-size: 40px;
-}
+  font-size: 4rem; }
 
+main {
+  min-height: 100%;
+  position: relative; }
+
+/* AFFIRMATIONS */
 .inactive {
   display: none;
-}
+  animation: fade .8s linear; }
 
 .active {
   display: block;
-  animation: fade .8s linear;
-  animation-iteration-count: 1;
-}
+  animation: fade .8s linear; }
 
-.last {
-  display: none;
-}
+.meditation_nav {
+  margin: 5% auto 5% auto;
+  text-align: center;
+  position: fixed;
+  bottom: 0; }
 
+.meditation_advance_button {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
 
+.meditation_end_button {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+.affirmation_container {
+  width: 80%;
+  height: 65%;
+  margin: 20% auto;
+  text-align: center;
+  font-size: 8rem;
+  padding: 5%; }
+
+.meditation_subject {
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3%;
+  margin: 4% auto;
+  background: none;
+  width: 70%; }
+
+/* ANIMATIONS */
 @keyframes fade {
-  0% { opacity: 0;
-          }
-  100% { opacity: 1;
-  }
-}
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

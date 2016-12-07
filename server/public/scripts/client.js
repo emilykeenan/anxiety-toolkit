@@ -1,6 +1,6 @@
 console.log('hallo world');
 
-var app = angular.module('anxietyToolkit', ['ngRoute', 'ngAnimate', 'ngTouch']);
+var app = angular.module('anxietyToolkit', ['ngRoute', 'ngTouch']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider

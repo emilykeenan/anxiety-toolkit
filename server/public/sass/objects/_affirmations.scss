@@ -1,0 +1,10 @@
+/* AFFIRMATIONS */
+.inactive {
+  display: none;
+  animation: fade .8s linear;
+}
+
+.active {
+  display: block;
+  animation: fade .8s linear;
+}
