@@ -5,8 +5,6 @@ app.controller('HomeController', ['$firebaseAuth', 'DataFactory', function($fire
   var self = this;
 
   self.logIn = DataFactory.logIn;
-
-
-
+  self.currentUser = DataFactory.currentUser;
 
 }]);

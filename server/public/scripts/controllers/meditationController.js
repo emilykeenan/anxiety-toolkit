@@ -1,6 +1,7 @@
-app.controller('MeditationController', ['$http', function($http) {
+app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http', function($firebaseAuth, DataFactory, $http) {
 
   console.log('meditation controller running');
+  console.log(DataFactory.currentUser);
 
   var self = this;
   self.meditations = [];
@@ -9,6 +10,13 @@ app.controller('MeditationController', ['$http', function($http) {
   self.meditationOver = false;
   self.currentMeditation = [];
   self.currentAffirmation = 0;
+  self.currentUser = DataFactory.currentUser();
+
+  console.log(self.currentUser);
+
+  // DataFactory.currentUser().then(function(user) {
+  //   self.currentUser = user;
+  // });
 
   // gets meditations from database
   getMeditations();
@@ -18,6 +26,7 @@ app.controller('MeditationController', ['$http', function($http) {
     $http.get('/meditation')
     .then(function(response) {
       self.meditations = response.data;
+      console.log(DataFactory.currentUser);
     });
   }; // end getMeditations function
 
