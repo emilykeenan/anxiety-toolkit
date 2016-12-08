@@ -5,7 +5,7 @@ var connectionString = 'postgres://localhost:5432/anxietytoolkit';
 
 
 // request to get meditations from database
-router.get("/", function(req, res){
+router.get('/', function(req, res){
   pg.connect(connectionString, function(err, client, done){
     var userEmail = req.decodedToken.email;
     // check for admin or user-created meditations
@@ -18,6 +18,27 @@ router.get("/", function(req, res){
         res.sendStatus(500);
       }else{
         res.send(result.rows);
+      }
+    });
+  });
+});
+
+router.post('/', function(req, res){
+  var meditation = req.body;
+  console.log(req.body);
+  pg.connect(connectionString, function(err, client, done){
+    // check for admin or user-created meditations
+    client.query('INSERT INTO meditations (subject, creator, affirmation1, affirmation2, affirmation3, affirmation4, affirmation5, ' +
+    'affirmation6, affirmation7, affirmation8, affirmation9, affirmation10) ' +
+    'VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)',
+    [meditation.subject, meditation.creator, meditation.affirmation1, meditation.affirmation2, meditation.affirmation3, meditation.affirmation4, meditation.affirmation5, meditation.affirmation6, meditation.affirmation7, meditation.affirmation8, meditation.affirmation9, meditation.affirmation10],
+    function(err, result){
+      done();
+      if(err){
+        console.log('Error COMPLETING meditation query task', err);
+        res.sendStatus(500);
+      }else{
+        res.sendStatus(201);
       }
     });
   });

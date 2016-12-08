@@ -11,6 +11,7 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
   self.currentMeditation = [];
   self.currentAffirmation = 0;
   self.currentUser = DataFactory.currentUser();
+  self.newMeditation = {};
 
   getMeditations();
 
@@ -70,6 +71,28 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
     self.currentMeditation = [];
     self.currentAffirmation = 0;
     self.selectedMeditation = {};
+  }
+
+  self.addMeditation = function() {
+    self.newMeditation.creator = self.currentUser.email;
+    console.log(self.newMeditation);
+    if(self.currentUser) {
+      self.currentUser.getToken().then(function(idToken){
+        $http({
+          method: 'POST',
+          url: '/meditation',
+          data: self.newMeditation,
+          headers: {
+            id_token: idToken
+          }
+        }).then(function(response){
+          alert('You\'ve added a new meditation!');
+          self.newMeditation = {};
+        });
+      });
+    } else {
+      console.log('Not logged in or not authorized.');
+    }
   }
 
 }]);

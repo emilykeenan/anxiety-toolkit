@@ -14,6 +14,11 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'MeditationController',
       controllerAs: 'mc'
     })
+    .when('/createmeditation' ,{
+      templateUrl: '/views/templates/createmeditation.html',
+      controller: 'MeditationController',
+      controllerAs: 'mc'
+    })
     .otherwise({
       redirectTo: 'home'
     });
