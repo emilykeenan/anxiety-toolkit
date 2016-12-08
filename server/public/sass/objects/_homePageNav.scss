@@ -1,10 +1,13 @@
-.logInButton {
-  background: #99B2B8;
+.fullWidthButton {
+  background: $main_color;
   border-radius: 20px;
-  border: 5px solid #647375;
+  border: 5px solid $dark_accent;
   width: 80%;
   padding: 2%;
-  color: #E3F6F3;
+  color: $dark_accent;
   margin: 0 auto;
-  margin: 30% 10%;
+  margin: 30% 10% 0 10%;
+  font-family: $header_font;
+  font-size: 5rem;
+  font-weight: bold;
 }

@@ -1,9 +1,10 @@
 .meditation_subject {
-display: block;
-border: none;
-border-bottom: 1px solid black;
-padding: 3%;
-margin: 4% auto;
-background: none;
-width: 70%;
+  background: $main_color;
+  border-radius: 20px;
+  border: 5px solid $dark_accent;
+  width: 80%;
+  padding: 2%;
+  color: $dark_accent;
+  margin: 3% 10% 0 10%;
+  font-family: $header_font;
 }
