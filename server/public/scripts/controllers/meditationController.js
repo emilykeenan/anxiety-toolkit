@@ -1,9 +1,9 @@
 app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http', function($firebaseAuth, DataFactory, $http) {
 
   console.log('meditation controller running');
-  console.log(DataFactory.currentUser);
 
   var self = this;
+  var auth = $firebaseAuth();
   self.meditations = [];
   self.meditationMode = false;
   self.selectedMeditation = {};
@@ -12,23 +12,31 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
   self.currentAffirmation = 0;
   self.currentUser = DataFactory.currentUser();
 
-  console.log(self.currentUser);
-
-  // DataFactory.currentUser().then(function(user) {
-  //   self.currentUser = user;
-  // });
-
-  // gets meditations from database
   getMeditations();
 
-  // function to get meditations from the database
   function getMeditations() {
-    $http.get('/meditation')
-    .then(function(response) {
-      self.meditations = response.data;
-      console.log(DataFactory.currentUser);
-    });
-  }; // end getMeditations function
+    if(self.currentUser) {
+      console.log(self.currentUser);
+      self.currentUser.getToken().then(function(idToken){
+        $http({
+          method: 'GET',
+          url: '/meditation',
+          headers: {
+            id_token: idToken
+          },
+        }).then(function(response){
+          self.meditations = response.data;
+        });
+      });
+    } else {
+      console.log('Not logged in or not authorized.');
+      self.meditations = [];
+    }
+  }
+
+
+
+  console.log(self.meditations);
 
   //function to start meditation when a meditation is selected
   self.startMeditation = function(meditation) {
@@ -45,7 +53,6 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
     self.currentMeditation.push(self.selectedMeditation.affirmation9);
     self.currentMeditation.push(self.selectedMeditation.affirmation10);
     self.meditationOver = false;
-
   }
 
   // function to advance to the next affirmation in meditation

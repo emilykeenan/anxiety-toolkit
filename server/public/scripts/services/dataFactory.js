@@ -3,7 +3,7 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
   console.log('dataFactory running');
 
   var auth = $firebaseAuth();
-  var currentUser = {};
+  var currentUser = null;
 
   // This code runs whenever the user logs in
   function logIn(){
@@ -17,6 +17,8 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
     });
   };
 
+
+
   function getCurrentUser() {
       return currentUser;
   }
@@ -26,6 +28,10 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
       console.log('Logging the user out!');
     });
   };
+
+  function getMeditations() {
+    return meditations;
+  }
 
   var publicApi = {
     currentUser: function() {
