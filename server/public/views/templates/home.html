@@ -1,7 +1,3 @@
 <button ng-hide="hc.loggedIn" ng-click="hc.signIn()" class="fullWidthButton">Log In</button>
 
-<div ng-show="hc.loggedIn" class="nav">
-  <a href="#meditation">Meditation</a>
-  <a href="#createmeditation">Create Meditation</a>
-  <a href="#home" ng-click="hc.logOut()">Log Out</a>
-</div>
+<div ng-include="'views/templates/nav.html'"></div>
