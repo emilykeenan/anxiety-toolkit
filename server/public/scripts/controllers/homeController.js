@@ -7,7 +7,7 @@ app.controller('HomeController', ['$firebaseAuth', 'DataFactory', function($fire
   self.logIn = DataFactory.logIn;
   self.currentUser = DataFactory.currentUser();
   self.logOut = DataFactory.logOut;
-  self.loggedIn = false;
+  self.loggedIn = DataFactory.loggedIn();
 
   self.signIn = function() {
     self.logIn().then( function(){
