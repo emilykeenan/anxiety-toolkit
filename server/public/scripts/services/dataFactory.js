@@ -4,6 +4,7 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
 
   var auth = $firebaseAuth();
   var currentUser = null;
+  var loggedIn = false;
 
   // This code runs whenever the user logs in
   function logIn(){
@@ -11,27 +12,31 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
       console.log("Firebase Authenticated as: ", firebaseUser.user.email);
       currentUser = firebaseUser.user;
       console.log(currentUser);
+      loggedIn = true;
+      console.log(loggedIn);
+      return loggedIn;
       return currentUser;
     }).catch(function(error) {
       console.log("Authentication failed: ", error);
     });
   };
 
-
+function getUserStatus() {
+  return loggedIn;
+}
 
   function getCurrentUser() {
+      console.log(loggedIn);
       return currentUser;
   }
 
   function logOut(){
-    auth.$signOut().then(function(){
+    return auth.$signOut().then(function(){
       console.log('Logging the user out!');
+      var currentUser = null;
+      location.reload();
     });
   };
-
-  function getMeditations() {
-    return meditations;
-  }
 
   var publicApi = {
     currentUser: function() {
@@ -39,6 +44,9 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
     },
     logIn: function() {
       return logIn();
+    },
+    loggedIn: function() {
+      return getUserStatus();
     },
     logOut: function() {
       return logOut();

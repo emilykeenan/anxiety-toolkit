@@ -1,4 +1,7 @@
-<button ng-click="hc.logIn()">Log In with Your Google Account</button>
+<button ng-hide="hc.loggedIn" ng-click="hc.signIn()">Log In with Your Google Account</button>
 
-<a href="#meditation">Meditation</a>
-<a href="#createmeditation">Create Meditation</a>
+<div ng-show="hc.loggedIn" class="nav">
+  <a href="#meditation">Meditation</a>
+  <a href="#createmeditation">Create Meditation</a>
+  <a href="#home" ng-click="hc.logOut()">Log Out</a>
+</div>
