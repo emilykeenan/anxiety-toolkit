@@ -74,7 +74,6 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
   }
 
   self.addMeditation = function() {
-    self.newMeditation.creator = self.currentUser.email;
     console.log(self.newMeditation);
     if(self.currentUser) {
       self.currentUser.getToken().then(function(idToken){
