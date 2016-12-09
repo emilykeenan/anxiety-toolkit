@@ -19,6 +19,11 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'MeditationController',
       controllerAs: 'mc'
     })
+    .when('/fidgets' ,{
+      templateUrl: '/views/templates/fidgets.html',
+      controller: 'FidgetController',
+      controllerAs: 'fc'
+    })
     .otherwise({
       redirectTo: 'home'
     });
