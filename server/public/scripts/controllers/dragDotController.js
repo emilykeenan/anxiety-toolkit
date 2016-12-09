@@ -6,4 +6,19 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
 
   self.currentUser = DataFactory.currentUser();
 
+  self.sortableList = [
+    {
+      id: "id-000",
+      title: "item 000"
+    },
+    {
+      id: "id-001",
+      title: "item 001"
+    },
+    {
+      id: "id-002",
+      title: "item 002"
+    },
+  ];
+
 }]);

@@ -216,6 +216,12 @@ form {
     .fidget_container {
       margin-top: 10%; } }
 
+.draggable_circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #647375; }
+
 /* ANIMATIONS */
 @keyframes fade {
   0% {
