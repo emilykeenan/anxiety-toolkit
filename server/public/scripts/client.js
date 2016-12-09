@@ -24,6 +24,11 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'FidgetController',
       controllerAs: 'fc'
     })
+    .when('/dragdotfidget' ,{
+      templateUrl: '/views/templates/dragdotfidget.html',
+      controller: 'DragDotController',
+      controllerAs: 'ddc'
+    })
     .otherwise({
       redirectTo: 'home'
     });

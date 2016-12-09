@@ -1,0 +1,13 @@
+.fidget_container {
+  margin-top: 15%;
+  a {
+    margin-top: 3%;
+    width: 80%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  @media (min-width: $mobile-width) {
+    margin-top: 10%;
+  }
+}
