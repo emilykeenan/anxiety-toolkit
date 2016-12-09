@@ -16,9 +16,9 @@
   width: 14%;
   padding-bottom: 5%;
 
-  // @media (min-width: $mobile-width) {
-  //   width: 5%
-  // }
+  @media (min-width: $mobile-width) {
+    width: 5%
+  }
 
 }
 .meditation_end_button {

@@ -2,25 +2,30 @@
 body {
   background: url('/assets/images/background.png') top left repeat;
   background-size: 30%;
-  font-size: 70px;
-  height: 100%;
+  font-size: 2rem;
   font-family: $font;
   margin: 0;
 }
 
-button {
-  font-size: 4rem;
-}
-
 main {
-  min-height: 100%;
-  position: relative;
+  margin: 0;
 }
 
 input {
   display: block;
-  width: 80%;
-  font-size: 3rem;
-  margin: 3% auto 3% auto;
+  width: 70%;
+  font-size: 1rem;
+  margin: 2% auto 2% auto;
   padding: 1%;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid $dark_accent;
+}
+
+button {
+  margin: 0px;
+}
+
+form {
+  margin-top: 30%;
 }

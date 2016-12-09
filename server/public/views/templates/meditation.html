@@ -1,6 +1,7 @@
 <div ng-include="'views/templates/nav.html'"></div>
-<div class="meditation_container">
-  <button ng-hide="mc.meditationMode" ng-repeat="meditation in mc.meditations" ng-click="mc.startMeditation(meditation)" class="meditation_subject">{{meditation.subject}}</button>
+
+<div ng-hide="mc.meditationMode"class="meditation_container">
+  <button ng-repeat="meditation in mc.meditations" ng-click="mc.startMeditation(meditation)" class="meditation_subject">{{meditation.subject}}</button>
 </div>
 <div class="affirmation_container" ng-show="mc.meditationMode">
   <p class="inactive" ng-class="{active: mc.currentAffirmation == $index}" ng-repeat="affirmation in mc.currentMeditation track by $index">{{affirmation}}</p>
