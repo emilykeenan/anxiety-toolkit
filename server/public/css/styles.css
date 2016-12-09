@@ -22,9 +22,6 @@ input {
 button {
   margin: 0px; }
 
-form {
-  margin-top: 30%; }
-
 /* AFFIRMATIONS */
 .inactive {
   display: none;
@@ -89,7 +86,7 @@ form {
     .meditation_container {
       margin-top: 15%; } }
 
-.fullWidthButton {
+.logInButton {
   background: rgba(224, 245, 242, 0.5);
   border-radius: 20px;
   border: 2px solid #647375;
@@ -101,7 +98,7 @@ form {
   font-family: "Lato", sans-serif;
   margin-top: 30%; }
   @media (min-width: 768px) {
-    .fullWidthButton {
+    .logInButton {
       margin-top: 10%;
       width: 40%;
       margin: 20% 30% 0 30%; } }
@@ -111,10 +108,10 @@ nav {
   top: 0px;
   background: rgba(224, 245, 242, 0.5);
   width: 100%;
-  height: 10%;
+  height: 5%;
   border-bottom: 3px solid #647375;
   padding-bottom: 5%;
-  text-align: center; }
+  text-align: right; }
   nav ul li {
     display: inline;
     font-size: 1rem;
@@ -166,6 +163,29 @@ nav {
             border-bottom: solid 1px #647375; }
             nav:hover ul li:last-child {
               border-bottom: none; } }
+
+form {
+  margin-top: 30%;
+  margin-bottom: 4%; }
+  @media only screen and (min-width: 768px) {
+    form {
+      margin-top: 15%; } }
+
+.fullWidthButton {
+  background: rgba(224, 245, 242, 0.5);
+  border-radius: 20px;
+  border: 2px solid #647375;
+  width: 80%;
+  padding: 2%;
+  font-size: 1rem;
+  color: #647375;
+  margin: 3% 10% 0 10%;
+  font-family: "Lato", sans-serif;
+  margin-top: 10%; }
+  @media only screen and (min-width: 768px) {
+    .fullWidthButton {
+      width: 40%;
+      margin: 10% 30% 0 30%; } }
 
 /* ANIMATIONS */
 @keyframes fade {

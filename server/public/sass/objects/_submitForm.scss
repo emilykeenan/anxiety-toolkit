@@ -1,0 +1,16 @@
+form {
+  margin-top: 30%;
+  margin-bottom: 4%;
+  @media only screen and (min-width: $mobile-width) {
+    margin-top: 15%;
+  }
+}
+
+.fullWidthButton {
+  @include button_default;
+  margin-top: 10%;
+  @media only screen and (min-width: $mobile-width) {
+    width: 40%;
+    margin: 10% 30% 0 30%;
+  }
+}
