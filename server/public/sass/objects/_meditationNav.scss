@@ -22,14 +22,5 @@
 
 }
 .meditation_end_button {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background: $main_color;
-  border-radius: 20px;
-  border: 2px solid $dark_accent;
-  padding: 2%;
-  color: $dark_accent;
-  font-family: $header_font;
-  font-weight: bold;
+  @include button_default;
 }

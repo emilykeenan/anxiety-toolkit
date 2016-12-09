@@ -1,0 +1,11 @@
+@mixin button_default {
+  background: $main_color;
+  border-radius: 20px;
+  border: 2px solid $dark_accent;
+  width: 80%;
+  padding: 2%;
+  font-size: 1rem;
+  color: $dark_accent;
+  margin: 3% 10% 0 10%;
+  font-family: $header_font;
+}
