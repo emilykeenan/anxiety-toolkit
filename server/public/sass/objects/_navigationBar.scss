@@ -1,73 +1,69 @@
 nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 40px;
-  width: 40px;
-  text-align: right;
+  position: absolute;
+  top: 0px;
   background: $main_color;
-  border-left: 2px solid $dark_accent;
-  border-bottom: 2px solid $dark_accent;
+  width: 100%;
+  height: 10%;
+  border-bottom: 3px solid $dark_accent;
+  padding-bottom: 5%;
+  text-align: center;
   ul {
-    list-style-type: none;
-    position: fixed;
-    top: 0;
-    right: 0;
     li {
-      display: none;
+      display: inline;
+      font-size: 1rem;
+      margin: 3%;
+      width: 25%;
       a {
         text-decoration: none;
         color: $dark_accent;
       }
     }
   }
-  &:hover {
-    border-bottom: none;
-    width: 40%;
-    height: 10px;
+  @media only screen and (max-width: $mobile-width) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    text-align: right;
+    background: $main_color url('/assets/images/hamburger.svg') center center no-repeat;
+    background-size: 80%;
+    border-left: 2px solid $dark_accent;
+    border-bottom: 2px solid $dark_accent;
     ul {
-      width: 40%;
-      margin-top: 10px;
-      padding: 4% 0% 4% 0%;
-      background: $main_color;
-      border-left: 2px solid $dark_accent;
-      border-bottom: 2px solid $dark_accent;
+      list-style-type: none;
+      position: fixed;
+      top: 0;
+      right: 0;
       li {
-        display: block;
-        padding: 4%;
-        right: 0;
-        text-align: right;
-        font-size: 0.75rem;
-        border-bottom: solid 1px $dark_accent;
-        &:last-child {
-          border-bottom: none;
-        }
+        display: none;
       }
     }
-  }
-  @media only screen and (min-width: $mobile-width) {
-    position: absolute;
-    top: 0px;
-    background: $main_color;
-    width: 100%;
-    height: 10%;
-    border-bottom: 3px solid $dark_accent;
-    padding-bottom: 5%;
-    text-align: center;
-    pointer-events: none;
-    ul {
-      width: 100%;
-      pointer-events: none;
-      li {
-        pointer-events: none;
-        display: inline;
-        font-size: 1rem;
-        margin: 3%;
-        width: 25%;
-        a {
-          pointer-events: none;
-          text-decoration: none;
-          color: $dark_accent;
+    &:hover {
+      border-bottom: none;
+      width: 40%;
+      height: 10px;
+      background: $main_color_solid;
+      ul {
+        width: 40%;
+        margin-top: 10px;
+        padding: 0;
+        background: $main_color_solid;
+        border-left: 2px solid $dark_accent;
+        border-bottom: 2px solid $dark_accent;
+        li {
+          position: relative;
+          text-align: center;
+          width: 80%;
+          margin: 10%;
+          display: block;
+          padding: 4%;
+          font-size: 0.75rem;
+          border-bottom: solid 1px $dark_accent;
+          &:last-child {
+            border-bottom: none;
+          }
         }
       }
     }
