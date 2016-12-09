@@ -1,0 +1,57 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  text-align: right;
+  background: $main_color;
+  border-left: 2px solid $dark_accent;
+  border-bottom: 2px solid $dark_accent;
+  ul {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    li {
+      display: none;
+      a {
+        text-decoration: none;
+        color: $dark_accent;
+      }
+    }
+  }
+  &:hover ul li {
+    display: block;
+    right: 0;
+    text-align: right;
+  }
+  @media only screen and (min-width: $mobile-width) {
+    position: absolute;
+    top: 0px;
+    background: $main_color;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    border-bottom: 3px solid $dark_accent;
+    padding-bottom: 5%;
+    ul {
+      &:hover li {
+        display: inline;
+        font-size: 1rem;
+        margin: 3%;
+        width: 25%;
+      }
+      li {
+        display: inline;
+        font-size: 1rem;
+        margin: 3%;
+        width: 25%;
+        a {
+          text-decoration: none;
+          color: $dark_accent;
+        }
+      }
+    }
+  }
+}
