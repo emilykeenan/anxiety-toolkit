@@ -21,15 +21,18 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
     });
   };
 
-function getUserStatus() {
-  return loggedIn;
-}
-
-  function getCurrentUser() {
-      console.log(loggedIn);
-      return currentUser;
+  // function to get boolean of whether or not there is currently a user that is logged in
+  function getUserStatus() {
+    return loggedIn;
   }
 
+  // function to get the firebase user
+  function getCurrentUser() {
+    console.log(loggedIn);
+    return currentUser;
+  }
+
+  // log out function
   function logOut(){
     return auth.$signOut().then(function(){
       console.log('Logging the user out!');

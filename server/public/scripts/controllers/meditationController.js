@@ -15,6 +15,7 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
 
   getMeditations();
 
+  // function to get meditations from the database
   function getMeditations() {
     if(self.currentUser) {
       console.log(self.currentUser);
@@ -73,6 +74,7 @@ app.controller('MeditationController', ['$firebaseAuth', 'DataFactory', '$http',
     self.selectedMeditation = {};
   }
 
+  // function to add a meditation to the database
   self.addMeditation = function() {
     console.log(self.newMeditation);
     if(self.currentUser) {
