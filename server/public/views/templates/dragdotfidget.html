@@ -1,8 +1,9 @@
 <div ng-include="'views/templates/nav.html'"></div>
-<div class="fidget_area">
+<div class="fidget_area drag_drop_stage">
   <ul data-as-sortable data-ng-model="ddc.sortableList">
     <li ng-repeat="item in ddc.sortableList" data-as-sortable-item class="draggable_circle">
                 <div data-as-sortable-item-handle class="draggable_circle">
+                  {{item.title}}
                 </div>
             </li>
   </ul>

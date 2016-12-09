@@ -1,6 +1,14 @@
+.drag_drop_stage {
+  height: 400px;
+}
+
 .draggable_circle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background: $dark_accent;
+  float: left;
+  color: white;
+  font-size: 5px;
+  margin: 5px;
 }

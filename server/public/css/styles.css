@@ -104,7 +104,6 @@ nav {
 .fidget_area {
   margin: 30% 15% 20% 15%;
   width: 70%;
-  height: 400px;
   background: rgba(224, 245, 242, 0.5);
   border: 2px solid #647375; }
 
@@ -216,11 +215,18 @@ form {
     .fidget_container {
       margin-top: 10%; } }
 
+.drag_drop_stage {
+  height: 400px; }
+
 .draggable_circle {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #647375; }
+  background: #647375;
+  float: left;
+  color: white;
+  font-size: 5px;
+  margin: 5px; }
 
 /* ANIMATIONS */
 @keyframes fade {
