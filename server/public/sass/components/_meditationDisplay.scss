@@ -1,3 +1,4 @@
+/* MEDITATION DISPLAY */
 .affirmation_container {
   width: 80%;
   height: 65%;
@@ -5,4 +6,8 @@
   text-align: center;
   font-size: 1rem;
   padding: 5%;
+  @media (min-width: $mobile-width) {
+    margin-top: 15%;
+    font-size: 3rem;
+  }
 }

@@ -22,54 +22,7 @@ input {
 button {
   margin: 0px; }
 
-/* AFFIRMATIONS */
-.inactive {
-  display: none;
-  animation: fade .8s linear; }
-
-.active {
-  display: block;
-  animation: fade .8s linear; }
-
-.meditation_nav {
-  margin: 5% auto 5% auto;
-  text-align: center;
-  position: fixed;
-  bottom: 9%;
-  width: 100%;
-  height: 5%; }
-
-.meditation_advance_button {
-  background: none;
-  border: none;
-  background-size: 100%;
-  display: block;
-  margin: 0 auto 40% auto;
-  width: 14%;
-  padding-bottom: 5%; }
-  @media (min-width: 768px) {
-    .meditation_advance_button {
-      width: 5%; } }
-
-.meditation_end_button {
-  background: rgba(224, 245, 242, 0.5);
-  border-radius: 20px;
-  border: 2px solid #647375;
-  width: 80%;
-  padding: 2%;
-  font-size: 1rem;
-  color: #647375;
-  margin: 3% 10% 0 10%;
-  font-family: "Lato", sans-serif; }
-
-.affirmation_container {
-  width: 80%;
-  height: 65%;
-  margin: 40% auto;
-  text-align: center;
-  font-size: 1rem;
-  padding: 5%; }
-
+/* MEDITATION CHOICE BUTTONS */
 .meditation_container {
   margin-top: 30%; }
   .meditation_container .meditation_subject {
@@ -86,23 +39,7 @@ button {
     .meditation_container {
       margin-top: 15%; } }
 
-.logInButton {
-  background: rgba(224, 245, 242, 0.5);
-  border-radius: 20px;
-  border: 2px solid #647375;
-  width: 80%;
-  padding: 2%;
-  font-size: 1rem;
-  color: #647375;
-  margin: 3% 10% 0 10%;
-  font-family: "Lato", sans-serif;
-  margin-top: 30%; }
-  @media (min-width: 768px) {
-    .logInButton {
-      margin-top: 10%;
-      width: 40%;
-      margin: 20% 30% 0 30%; } }
-
+/* NAV BAR */
 nav {
   position: absolute;
   top: 0px;
@@ -164,6 +101,79 @@ nav {
             nav:hover ul li:last-child {
               border-bottom: none; } }
 
+/* AFFIRMATIONS */
+.inactive {
+  display: none;
+  animation: fade .8s linear; }
+
+.active {
+  display: block;
+  animation: fade .8s linear; }
+
+/* MEDITATION NAV */
+.meditation_nav {
+  margin: 5% auto 5% auto;
+  text-align: center;
+  position: fixed;
+  bottom: 9%;
+  width: 100%;
+  height: 5%; }
+
+.meditation_advance_button {
+  background: none;
+  border: none;
+  background-size: 100%;
+  display: block;
+  margin: 0 auto 40% auto;
+  width: 14%;
+  padding-bottom: 5%; }
+  @media (min-width: 768px) {
+    .meditation_advance_button {
+      width: 5%; } }
+
+.meditation_end_button {
+  background: rgba(224, 245, 242, 0.5);
+  border-radius: 20px;
+  border: 2px solid #647375;
+  width: 80%;
+  padding: 2%;
+  font-size: 1rem;
+  color: #647375;
+  margin: 3% 10% 0 10%;
+  font-family: "Lato", sans-serif; }
+
+/* MEDITATION DISPLAY */
+.affirmation_container {
+  width: 80%;
+  height: 65%;
+  margin: 40% auto;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5%; }
+  @media (min-width: 768px) {
+    .affirmation_container {
+      margin-top: 15%;
+      font-size: 3rem; } }
+
+/* HOME PAGE NAV */
+.logInButton {
+  background: rgba(224, 245, 242, 0.5);
+  border-radius: 20px;
+  border: 2px solid #647375;
+  width: 80%;
+  padding: 2%;
+  font-size: 1rem;
+  color: #647375;
+  margin: 3% 10% 0 10%;
+  font-family: "Lato", sans-serif;
+  margin-top: 30%; }
+  @media (min-width: 768px) {
+    .logInButton {
+      margin-top: 10%;
+      width: 40%;
+      margin: 20% 30% 0 30%; } }
+
+/* SUBMIT FORM */
 form {
   margin-top: 30%;
   margin-bottom: 4%; }
