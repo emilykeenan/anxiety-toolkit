@@ -187,6 +187,17 @@ nav {
       width: 40%;
       margin: 20% 30% 0 30%; } }
 
+.log_in_container {
+  margin-top: 20%;
+  text-align: center; }
+  .log_in_container .home_logo {
+    margin: 0 auto;
+    width: 70%; }
+  .log_in_container h1 {
+    font-size: 1.75rem;
+    color: #647375;
+    margin-top: -15%; }
+
 .home_container {
   margin: 33% auto 0 auto;
   width: 40%;

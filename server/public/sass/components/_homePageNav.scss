@@ -9,7 +9,20 @@
     margin: 20% 30% 0 30%;
   }
 }
+.log_in_container {
+  margin-top: 20%;
+  text-align: center;
+  .home_logo {
+    margin: 0 auto;
+    width: 70%;
 
+  }
+  h1 {
+    font-size: 1.75rem;
+    color: $dark_accent;
+    margin-top: -15%;
+  }
+}
 .home_container {
   margin: 33% auto 0 auto;
   width: 40%;

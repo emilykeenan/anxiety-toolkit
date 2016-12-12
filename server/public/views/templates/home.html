@@ -2,5 +2,9 @@
   <a class="homepagebutton" href="#meditation"><img src="/assets/images/meditationbutton.svg" alt="meditation"/></a>
   <a class="homepagebutton" href="#createmeditation"><img src="/assets/images/addmeditationbutton.svg" alt="add meditation"/></a>
   <a class="homepagebutton" href="#fidgets"><img src="/assets/images/dragdotbutton.svg" alt="fidgets"/></a>
-  </div>
-<button ng-hide="hc.loggedIn" ng-click="hc.signIn()" class="logInButton">Log In</button>
+</div>
+<div ng-hide="hc.loggedIn" class="log_in_container">
+  <img class="home_logo" src="/assets/images/logo.svg" alt="my anxiety toolkit logo" />
+  <h1>My Anxiety Toolkit</h1>
+  <button ng-click="hc.signIn()" class="logInButton">Log In</button>
+</div>
