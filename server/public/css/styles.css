@@ -84,17 +84,19 @@ nav {
         nav ul li {
           display: none; }
       nav:hover {
-        border-bottom: none;
-        width: 40%;
-        height: 40px;
-        background: #e0f5f2; }
+        border-bottom: 2px solid #647375;
+        width: 40px;
+        height: 40px; }
         nav:hover ul {
           width: 40%;
           margin-top: 40px;
           padding: 0;
-          background: #e0f5f2;
+          height: 32%;
+          background: rgba(224, 245, 242, 0.5);
           border-left: 2px solid #647375;
-          border-bottom: 2px solid #647375; }
+          border-bottom: 2px solid #647375;
+          border-top: 2px solid #647375;
+          animation: slideNav 0.3s linear; }
           nav:hover ul li {
             position: relative;
             text-align: center;
@@ -258,3 +260,9 @@ form {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes slideNav {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
