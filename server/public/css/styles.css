@@ -218,9 +218,9 @@ form {
   margin: 30% auto 0 auto; }
   @media (min-width: 768px) {
     .drag_drop_stage {
-      margin-top: 15%;
-      height: 470px;
-      width: 660px; } }
+      margin-top: 10%;
+      width: 430px;
+      height: 630px; } }
 
 .draggable_circle {
   height: 30px;
@@ -230,8 +230,8 @@ form {
   border: solid 0.5px black; }
   @media (min-width: 768px) {
     .draggable_circle {
-      height: 60px;
-      width: 60px; } }
+      height: 55px;
+      width: 55px; } }
 
 .draggable_circle_container {
   height: 32px;
@@ -240,8 +240,8 @@ form {
   background: none; }
   @media (min-width: 768px) {
     .draggable_circle_container {
-      height: 62px;
-      width: 62px; } }
+      height: 57px;
+      width: 57px; } }
 
 /* ANIMATIONS */
 @keyframes fade {
