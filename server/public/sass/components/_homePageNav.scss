@@ -1,7 +1,7 @@
 /* HOME PAGE NAV */
 .logInButton {
   @include button_default;
-  margin-top: 30%;
+  margin-top: 50%;
 
   @media (min-width: $mobile-width) {
     margin-top: 10%;
