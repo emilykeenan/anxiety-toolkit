@@ -219,8 +219,8 @@ form {
   @media (min-width: 768px) {
     .drag_drop_stage {
       margin-top: 10%;
-      width: 430px;
-      height: 630px; } }
+      width: 450px;
+      height: 650px; } }
 
 .draggable_circle {
   height: 30px;
@@ -240,8 +240,8 @@ form {
   background: none; }
   @media (min-width: 768px) {
     .draggable_circle_container {
-      height: 57px;
-      width: 57px; } }
+      height: 60px;
+      width: 60px; } }
 
 /* ANIMATIONS */
 @keyframes fade {
