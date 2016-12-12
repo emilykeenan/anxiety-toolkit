@@ -37,7 +37,8 @@ app.factory('DataFactory', ['$firebaseAuth', '$http', function($firebaseAuth, $h
     return auth.$signOut().then(function(){
       console.log('Logging the user out!');
       var currentUser = null;
-      location.reload();
+      loggedIn = false;
+      window.location = "/#/home";
     });
   };
 

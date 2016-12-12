@@ -187,6 +187,15 @@ nav {
       width: 40%;
       margin: 20% 30% 0 30%; } }
 
+.home_container {
+  margin: 40% auto 0 auto;
+  width: 100%;
+  text-align: center; }
+
+.homepagebutton img {
+  width: 38%;
+  margin: 4%; }
+
 /* SUBMIT FORM */
 form {
   margin-top: 30%;
