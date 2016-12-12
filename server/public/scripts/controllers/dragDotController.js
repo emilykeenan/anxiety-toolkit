@@ -6,6 +6,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
 
   self.currentUser = DataFactory.currentUser();
 
+  // list of colored dots
   self.sortableList = [
     {
       color: "hsla(170, 95%, 35%, 1)"
@@ -150,7 +151,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
     },
     {
       color: "hsla(230, 45%, 95%, 1)"
-    }, //ended here
+    },
     {
       color: "hsla(231, 5%, 15%, 1)"
     },
