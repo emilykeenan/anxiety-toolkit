@@ -40,6 +40,12 @@ button {
       margin-top: 9%;
       margin-bottom: 2%; } }
 
+.fidget {
+  width: 2px;
+  margin: 0 auto; }
+  .fidget img {
+    width: 100px; }
+
 /* NAV BAR */
 nav {
   position: absolute;
