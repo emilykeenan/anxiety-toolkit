@@ -114,7 +114,61 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
     },
     {
       color: "hsla(61, 95%, 85%, 1)"
-    }, // ended here
+    },
+    {
+      color: "hsla(268, 85%, 45%, 1)"
+    },
+    {
+      color: "hsla(268, 85%, 55%, 1)"
+    },
+    {
+      color: "hsla(268, 85%, 65%, 1)"
+    },
+    {
+      color: "hsla(268, 85%, 75%, 1)"
+    },
+    {
+      color: "hsla(268, 85%, 85%, 1)"
+    },
+    {
+      color: "hsla(268, 85%, 95%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 45%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 55%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 65%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 75%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 85%, 1)"
+    },
+    {
+      color: "hsla(230, 45%, 95%, 1)"
+    }, //ended here
+    {
+      color: "hsla(231, 5%, 15%, 1)"
+    },
+    {
+      color: "hsla(231, 5%, 35%, 1)"
+    },
+    {
+      color: "hsla(231, 5%, 55%, 1)"
+    },
+    {
+      color: "hsla(231, 5%, 75%, 1)"
+    },
+    {
+      color: "hsla(231, 5%, 85%, 1))"
+    },
+    {
+      color: "hsla(231, 5%, 95%, 1)"
+    }
   ];
 
   // Fisher-Yates Shuffle added to randomize order of colored dots
