@@ -8,90 +8,103 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
 
   self.sortableList = [
     {
-      id: "id-000",
-      title: "item 000"
+      color: "hsla(170, 95%, 35%, 1)"
     },
     {
-      id: "id-001",
-      title: "item 001"
+      color: "hsla(170, 95%, 45%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 002"
+      color: "hsla(170, 95%, 55%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 003"
+      color: "hsla(170, 95%, 65%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 004"
+      color: "hsla(170, 95%, 75%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 005"
+      color: "hsla(170, 95%, 85%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 006"
+      color: "hsla(360, 95%, 35%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 007"
+      color: "hsla(360, 95%, 45%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 008"
+      color: "hsla(360, 95%, 55%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 008"
+      color: "hsla(360, 95%, 65%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 009"
+      color: "hsla(360, 95%, 75%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 010"
+      color: "hsla(360, 95%, 85%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 011"
+      color: "hsla(319, 95%, 35%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 012"
+      color: "hsla(319, 95%, 45%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 013"
+      color: "hsla(319, 95%, 55%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 014"
+      color: "hsla(319, 95%, 65%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 015"
+      color: "hsla(319, 95%, 75%, 1)"
     },
     {
-      id: "id-002",
-      title: "item 016"
+      color: "hsla(319, 95%, 85%, 1)"
+    },
+    {
+      color: "hsla(29, 95%, 45%, 1)"
+    },
+    {
+      color: "hsla(29, 95%, 55%, 1"
+    },
+    {
+      color: "hsla(29, 95%, 65%, 1)"
+    },
+    {
+      color: "hsla(29, 95%, 75%, 1)"
+    },
+    {
+      color: "hsla(29, 95%, 85%, 1)"
+    },
+    {
+      color: "hsla(29, 95%, 95%, 1)"
+    }, // ended here
+    {
+      color: "hsla(114, 45%, 45%, 1)"
+    },
+    {
+      color: "hsla(114, 45%, 55%, 1)"
+    },
+    {
+      color: "hsla(114, 45%, 65%, 1)"
+    },
+    {
+      color: "hsla(114, 45%, 75%, 1)"
+    },
+    {
+      color: "hsla(114, 45%, 85%, 1)"
+    },
+    {
+      color: "hsla(114, 45%, 95%, 1)"
     }
   ];
 
+  // Fisher-Yates Shuffle added to randomize order of colored dots
   function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
-
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
