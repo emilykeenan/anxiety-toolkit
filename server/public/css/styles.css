@@ -219,8 +219,8 @@ form {
   @media (min-width: 768px) {
     .drag_drop_stage {
       margin-top: 10%;
-      width: 450px;
-      height: 650px; } }
+      width: 420px;
+      height: 615px; } }
 
 .draggable_circle {
   height: 30px;
@@ -230,8 +230,8 @@ form {
   border: solid 0.5px black; }
   @media (min-width: 768px) {
     .draggable_circle {
-      height: 55px;
-      width: 55px; } }
+      height: 50px;
+      width: 50px; } }
 
 .draggable_circle_container {
   height: 32px;
@@ -240,8 +240,8 @@ form {
   background: none; }
   @media (min-width: 768px) {
     .draggable_circle_container {
-      height: 60px;
-      width: 60px; } }
+      height: 55px;
+      width: 55px; } }
 
 /* ANIMATIONS */
 @keyframes fade {
