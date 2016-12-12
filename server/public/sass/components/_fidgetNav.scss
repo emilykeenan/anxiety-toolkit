@@ -8,6 +8,9 @@
     text-decoration: none;
   }
   @media (min-width: $mobile-width) {
-    margin-top: 10%;
+    margin-top: 15%;
+    a {
+      width: 40%;
+    }
   }
 }

@@ -207,7 +207,9 @@ form {
     text-decoration: none; }
   @media (min-width: 768px) {
     .fidget_container {
-      margin-top: 10%; } }
+      margin-top: 15%; }
+      .fidget_container a {
+        width: 40%; } }
 
 .drag_drop_stage {
   height: 405px;
@@ -218,9 +220,10 @@ form {
   margin: 30% auto 0 auto; }
   @media (min-width: 768px) {
     .drag_drop_stage {
-      margin-top: 10%;
+      margin-top: 15%;
       width: 420px;
-      height: 615px; } }
+      height: 615px;
+      margin-bottom: 2%; } }
 
 .draggable_circle {
   height: 30px;
