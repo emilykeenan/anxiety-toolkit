@@ -29,6 +29,11 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'DragDotController',
       controllerAs: 'ddc'
     })
+    .when('/weavefidget' ,{
+      templateUrl: '/views/templates/weavefidget.html',
+      controller: 'WeaveController',
+      controllerAs: 'wc'
+    })
     .otherwise({
       redirectTo: 'home'
     });
