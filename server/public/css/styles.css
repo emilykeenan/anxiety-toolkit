@@ -210,6 +210,13 @@ nav {
   margin: 33% auto 0 auto;
   width: 40%;
   text-align: center; }
+  @media (min-width: 768px) {
+    .home_container {
+      margin-top: 15%; }
+      .home_container .homepagebutton {
+        width: 40%; }
+        .home_container .homepagebutton img {
+          width: 30%; } }
 
 .homepagebutton img {
   width: 80%;
