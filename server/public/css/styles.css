@@ -197,6 +197,14 @@ nav {
     font-size: 1.75rem;
     color: #647375;
     margin-top: -15%; }
+  @media (min-width: 768px) {
+    .log_in_container {
+      margin-top: 5%; }
+      .log_in_container .home_logo {
+        width: 20%; }
+      .log_in_container h1 {
+        font-size: 3rem;
+        margin-top: -2%; } }
 
 .home_container {
   margin: 33% auto 0 auto;
