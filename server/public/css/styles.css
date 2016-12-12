@@ -216,6 +216,11 @@ form {
   background: rgba(224, 245, 242, 0.5);
   border: 2px solid #647375;
   margin: 30% auto 0 auto; }
+  @media (min-width: 768px) {
+    .drag_drop_stage {
+      margin-top: 15%;
+      height: 470px;
+      width: 660px; } }
 
 .draggable_circle {
   height: 30px;
@@ -223,12 +228,20 @@ form {
   border-radius: 50%;
   float: left;
   border: solid 0.5px black; }
+  @media (min-width: 768px) {
+    .draggable_circle {
+      height: 60px;
+      width: 60px; } }
 
 .draggable_circle_container {
   height: 32px;
   width: 32px;
   border: none;
   background: none; }
+  @media (min-width: 768px) {
+    .draggable_circle_container {
+      height: 62px;
+      width: 62px; } }
 
 /* ANIMATIONS */
 @keyframes fade {
