@@ -1,7 +1,7 @@
 .weave_stage {
   @extend .drag_drop_stage;
-  margin-top: 22%;
-  margin-bottom: 5%;
+  margin-top: 25%;
+  margin-bottom: 10%;
   position: relative;
   overflow: hidden;
   .vertical {
@@ -89,6 +89,10 @@
       }
     }
   }
+  @media (min-width: $mobile-width) {
+    margin: 9% 20% auto 20%;
+    float: left;
+  }
 }
 
 .gear_container {
@@ -98,11 +102,18 @@
   .gear {
     display: inline;
     img {
-      width: 60px;
+      width: 32px;
       text-align: center;
       &:active {
         animation: rotate 0.2s ease-in-out;
       }
+    }
+  }
+  @media (min-width: $mobile-width) {
+    margin: -45% auto;
+    float: right;
+    .gear {
+      display: block;
     }
   }
 }

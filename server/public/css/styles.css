@@ -184,12 +184,11 @@ nav {
   margin-top: 50%; }
   @media (min-width: 768px) {
     .logInButton {
-      margin-top: 10%;
       width: 40%;
-      margin: 20% 30% 0 30%; } }
+      margin: 10% 30% 0 30%; } }
 
 .log_in_container {
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center; }
   .log_in_container .home_logo {
     margin: 0 auto;
@@ -297,8 +296,8 @@ form {
       width: 55px; } }
 
 .weave_stage {
-  margin-top: 22%;
-  margin-bottom: 5%;
+  margin-top: 25%;
+  margin-bottom: 10%;
   position: relative;
   overflow: hidden; }
   .weave_stage .vertical, .weave_stage .horizontal {
@@ -365,6 +364,10 @@ form {
       background: rgba(169, 142, 194, 0.5); }
       .weave_stage .horizontal.purple.second {
         top: 92%; }
+  @media (min-width: 768px) {
+    .weave_stage {
+      margin: 9% 20% auto 20%;
+      float: left; } }
 
 .gear_container {
   width: 248px;
@@ -373,10 +376,16 @@ form {
   .gear_container .gear {
     display: inline; }
     .gear_container .gear img {
-      width: 60px;
+      width: 32px;
       text-align: center; }
       .gear_container .gear img:active {
         animation: rotate 0.2s ease-in-out; }
+  @media (min-width: 768px) {
+    .gear_container {
+      margin: -45% auto;
+      float: right; }
+      .gear_container .gear {
+        display: block; } }
 
 /* ANIMATIONS */
 @keyframes fade {
