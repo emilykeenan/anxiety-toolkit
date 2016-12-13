@@ -22,8 +22,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growRed = function() {
     if(self.redHeight < 100) {
-      self.redHeight += self.redHeight + 10;
-      self.redWidth += self.redWidth + 10;
+      self.redHeight += 10;
+      self.redWidth += 10;
     } else {
       self.redHeight = 1;
       self.redWidth = 2;
@@ -32,8 +32,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growOrange = function() {
     if(self.orangeHeight < 100) {
-      self.orangeHeight += self.orangeHeight + 10;
-      self.orangeWidth += self.orangeWidth + 10;
+      self.orangeHeight += 10;
+      self.orangeWidth += 10;
     } else {
       self.orangeHeight = 1;
       self.orangeWidth = 2;
@@ -42,8 +42,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growYellow = function() {
     if(self.yellowHeight < 100) {
-      self.yellowHeight += self.yellowHeight + 10;
-      self.yellowWidth += self.yellowWidth + 10;
+      self.yellowHeight += 10;
+      self.yellowWidth += 10;
     } else {
       self.yellowHeight = 1;
       self.yellowWidth = 2;
@@ -52,8 +52,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growGreen = function() {
     if(self.greenHeight < 100) {
-      self.greenHeight += self.greenHeight + 10;
-      self.greenWidth += self.greenWidth + 10;
+      self.greenHeight += 10;
+      self.greenWidth += 10;
     } else {
       self.greenHeight = 1;
       self.greenWidth = 2;
@@ -62,8 +62,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growBlue = function() {
     if(self.blueHeight < 100) {
-      self.blueHeight += self.blueHeight + 10;
-      self.blueWidth += self.blueWidth + 10;
+      self.blueHeight += 10;
+      self.blueWidth += 10;
     } else {
       self.blueHeight = 1;
       self.blueWidth = 2;
@@ -72,8 +72,8 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.growPurple = function() {
     if(self.purpleHeight < 100) {
-      self.purpleHeight += self.purpleHeight + 10;
-      self.purpleWidth += self.purpleWidth + 10;
+      self.purpleHeight += 10;
+      self.purpleWidth += 10;
     } else {
       self.purpleHeight = 1;
       self.purpleWidth = 2;
