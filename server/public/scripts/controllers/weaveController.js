@@ -36,6 +36,10 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
     width: 2,
   };
 
+  self.animate = {
+    'animation': 'slideDown 1s linear'
+  }
+
   self.growRed = function() {
     if(self.red.height < 100) {
       self.red.height += 10;

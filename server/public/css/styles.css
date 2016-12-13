@@ -330,41 +330,41 @@ form {
     border-top: 1px solid #647375;
     border-left: 5px solid #647375; }
     .weave_stage .horizontal.red {
-      top: 4.5%;
+      top: 4%;
       left: 0;
       background: rgba(234, 144, 189, 0.5); }
       .weave_stage .horizontal.red.second {
         top: 52%; }
     .weave_stage .horizontal.orange {
-      top: 12.5%;
+      top: 12%;
       left: 0;
       background: rgba(255, 223, 153, 0.5); }
       .weave_stage .horizontal.orange.second {
-        top: 60.5%; }
+        top: 60%; }
     .weave_stage .horizontal.yellow {
-      top: 20.5%;
+      top: 20%;
       left: 0;
       background: rgba(251, 248, 203, 0.5); }
       .weave_stage .horizontal.yellow.second {
-        top: 68.5%; }
+        top: 68%; }
     .weave_stage .horizontal.green {
-      top: 28.5%;
+      top: 28%;
       left: 0;
       background: rgba(178, 219, 174, 0.5); }
       .weave_stage .horizontal.green.second {
-        top: 75.5%; }
+        top: 76%; }
     .weave_stage .horizontal.blue {
-      top: 36.5%;
+      top: 36%;
       left: 0;
       background: rgba(159, 220, 249, 0.5); }
       .weave_stage .horizontal.blue.second {
-        top: 83.5%; }
+        top: 84%; }
     .weave_stage .horizontal.purple {
-      top: 44.5%;
+      top: 44%;
       left: 0;
       background: rgba(169, 142, 194, 0.5); }
       .weave_stage .horizontal.purple.second {
-        top: 91.5%; }
+        top: 92%; }
 
 .gear_container {
   width: 248px;

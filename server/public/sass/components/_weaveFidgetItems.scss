@@ -41,7 +41,7 @@
     border-top: 1px solid $dark_accent;
     border-left: 5px solid $dark_accent;
     &.red {
-      top: 4.5%;
+      top: 4%;
       left: 0;
       background: hsla(330, 68%, 74%, 0.5);
       &.second {
@@ -49,43 +49,43 @@
       }
     }
     &.orange {
-      top: 12.5%;
+      top: 12%;
       left: 0;
       background: hsla(41, 100%, 80%, 0.5);
       &.second {
-        top: 60.5%;
+        top: 60%;
       }
     }
     &.yellow {
-      top: 20.5%;
+      top: 20%;
       left: 0;
       background: hsla(56, 86%, 89%, 0.5);
       &.second {
-        top: 68.5%;
+        top: 68%;
       }
     }
     &.green {
-      top: 28.5%;
+      top: 28%;
       left: 0;
       background: hsla(115, 38%, 77%, 0.5);
       &.second {
-        top: 75.5%;
+        top: 76%;
       }
     }
     &.blue {
-      top: 36.5%;
+      top: 36%;
       left: 0;
       background: hsla(199, 88%, 80%, 0.5);
       &.second {
-        top: 83.5%;
+        top: 84%;
       }
     }
     &.purple {
-      top: 44.5%;
+      top: 44%;
       left: 0;
       background: hsla(271, 30%, 66%, 0.5);
       &.second {
-        top: 91.5%;
+        top: 92%;
       }
     }
   }
