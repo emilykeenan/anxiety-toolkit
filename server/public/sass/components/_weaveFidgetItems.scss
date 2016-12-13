@@ -3,10 +3,10 @@
   margin-top: 22%;
   margin-bottom: 5%;
   position: relative;
+  overflow: hidden;
   .vertical {
     border: 1px solid black;
     position: absolute;
-    height: 6.25%;
     width: 26px;
     border: 1px solid $dark_accent;
     border-top: 5px solid $dark_accent;
@@ -38,7 +38,6 @@
   .horizontal {
     @extend .vertical;
     height: 4%;
-    width: 10%;
     border-top: 1px solid $dark_accent;
     border-left: 5px solid $dark_accent;
     &.red {

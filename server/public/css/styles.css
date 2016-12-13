@@ -298,11 +298,11 @@ form {
 .weave_stage {
   margin-top: 22%;
   margin-bottom: 5%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .weave_stage .vertical, .weave_stage .horizontal {
     border: 1px solid black;
     position: absolute;
-    height: 6.25%;
     width: 26px;
     border: 1px solid #647375;
     border-top: 5px solid #647375; }
@@ -326,7 +326,6 @@ form {
       background: rgba(169, 142, 194, 0.5); }
   .weave_stage .horizontal {
     height: 4%;
-    width: 10%;
     border-top: 1px solid #647375;
     border-left: 5px solid #647375; }
     .weave_stage .horizontal.red {

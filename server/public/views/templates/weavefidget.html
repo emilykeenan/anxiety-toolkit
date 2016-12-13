@@ -1,29 +1,29 @@
 <div ng-include="'views/templates/nav.html'"></div>
 <div class="weave_stage">
-  <div class="red vertical"></div>
-  <div class="orange vertical"></div>
-  <div class="yellow vertical"></div>
-  <div class="green vertical"></div>
-  <div class="blue vertical"></div>
-  <div class="purple vertical"></div>
-  <div class="red horizontal"></div>
-  <div class="orange horizontal"></div>
-  <div class="yellow horizontal"></div>
-  <div class="green horizontal"></div>
-  <div class="blue horizontal"></div>
-  <div class="purple horizontal"></div>
-  <div class="red second horizontal"></div>
-  <div class="orange second horizontal"></div>
-  <div class="yellow second horizontal"></div>
-  <div class="green second horizontal"></div>
-  <div class="blue second horizontal"></div>
-  <div class="purple second horizontal"></div>
+  <div ng-style="{'height': wc.redHeight + '%'}" class="red vertical"></div>
+  <div ng-style="{'height': wc.orangeHeight + '%'}" class="orange vertical"></div>
+  <div ng-style="{'height': wc.yellowHeight + '%'}" class="yellow vertical"></div>
+  <div ng-style="{'height': wc.greenHeight + '%'}" class="green vertical"></div>
+  <div ng-style="{'height': wc.blueHeight + '%'}" class="blue vertical"></div>
+  <div ng-style="{'height': wc.purpleHeight + '%'}" class="purple vertical"></div>
+  <div ng-style="{'width': wc.redWidth + '%'}" class="red horizontal"></div>
+  <div ng-style="{'width': wc.orangeWidth + '%'}" class="orange horizontal"></div>
+  <div ng-style="{'width': wc.yellowWidth + '%'}" class="yellow horizontal"></div>
+  <div ng-style="{'width': wc.greenWidth + '%'}" class="green horizontal"></div>
+  <div ng-style="{'width': wc.blueWidth + '%'}" class="blue horizontal"></div>
+  <div ng-style="{'width': wc.purpleWidth + '%'}" class="purple horizontal"></div>
+  <div ng-style="{'width': wc.redWidth + '%'}" class="red second horizontal"></div>
+  <div ng-style="{'width': wc.orangeWidth + '%'}" class="orange second horizontal"></div>
+  <div ng-style="{'width': wc.yellowWidth + '%'}" class="yellow second horizontal"></div>
+  <div ng-style="{'width': wc.greenWidth + '%'}" class="green second horizontal"></div>
+  <div ng-style="{'width': wc.blueWidth + '%'}" class="blue second horizontal"></div>
+  <div ng-style="{'width': wc.purpleWidth + '%'}" class="purple second horizontal"></div>
 </div>
 <div class="gear_container">
-  <div class="gear"><img src="/assets/images/gearred.svg" ng-click="growRed()" /></div>
-  <div class="gear"><img src="/assets/images/gearorange.svg" ng-click="growOrange()" /></div>
-  <div class="gear"><img src="/assets/images/gearyellow.svg" ng-click="growYellow()" /></div>
-  <div class="gear"><img src="/assets/images/geargreen.svg" ng-click="growGreen()" /></div>
-  <div class="gear"><img src="/assets/images/gearblue.svg" ng-click="growBlue()" /></div>
-  <div class="gear"><img src="/assets/images/gearpurple.svg" ng-click="growPurple()" /></div>
+  <div class="gear"><img src="/assets/images/gearred.svg" ng-click="wc.growRed()" /></div>
+  <div class="gear"><img src="/assets/images/gearorange.svg" ng-click="wc.growOrange()" /></div>
+  <div class="gear"><img src="/assets/images/gearyellow.svg" ng-click="wc.growYellow()" /></div>
+  <div class="gear"><img src="/assets/images/geargreen.svg" ng-click="wc.growGreen()" /></div>
+  <div class="gear"><img src="/assets/images/gearblue.svg" ng-click="wc.growBlue()" /></div>
+  <div class="gear"><img src="/assets/images/gearpurple.svg" ng-click="wc.growPurple()" /></div>
 </div>
