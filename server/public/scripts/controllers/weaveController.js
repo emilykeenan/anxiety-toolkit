@@ -41,9 +41,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growRed = function() {
-    if(self.red.height < 100) {
-      self.red.height += 10;
-      self.red.width += 10;
+    if(self.red.height < 100 && self.red.width < 20) {
+      self.red.height += 14;
+      self.red.width += 18.25;
+    } else if (self.red.height < 100 && self.red.width > 20){
+      self.red.height += 8;
+      self.red.width += 13;
     } else {
       self.red.height = 1;
       self.red.width = 2;
@@ -51,9 +54,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growOrange = function() {
-    if(self.orange.height < 100) {
-      self.orange.height += 10;
-      self.orange.width += 10;
+    if(self.orange.height < 100 && self.orange.width < 20) {
+      self.orange.height += 14;
+      self.orange.width += 18.25;
+    } else if (self.orange.height < 100 && self.orange.width > 20){
+      self.orange.height += 8;
+      self.orange.width += 13;
     } else {
       self.orange.height = 1;
       self.orange.width = 2;
@@ -61,9 +67,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growYellow = function() {
-    if(self.yellow.height < 100) {
-      self.yellow.height += 10;
-      self.yellow.width += 10;
+    if(self.yellow.height < 100 && self.yellow.width < 20) {
+      self.yellow.height += 14;
+      self.yellow.width += 18.25;
+    } else if (self.yellow.height < 100 && self.yellow.width > 20){
+      self.yellow.height += 8;
+      self.yellow.width += 13;
     } else {
       self.yellow.height = 1;
       self.yellow.width = 2;
@@ -71,9 +80,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growGreen = function() {
-    if(self.green.height < 100) {
-      self.green.height += 10;
-      self.green.width += 10;
+    if(self.green.height < 100 && self.green.width < 20) {
+      self.green.height += 14;
+      self.green.width += 18.25;
+    } else if (self.green.height < 100 && self.green.width > 20){
+      self.green.height += 8;
+      self.green.width += 13;
     } else {
       self.green.height = 1;
       self.green.width = 2;
@@ -81,9 +93,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growBlue = function() {
-    if(self.blue.height < 100) {
-      self.blue.height += 10;
-      self.blue.width += 10;
+    if(self.blue.height < 100 && self.blue.width < 20) {
+      self.blue.height += 14;
+      self.blue.width += 18.25;
+    } else if (self.blue.height < 100 && self.blue.width > 20){
+      self.blue.height += 8;
+      self.blue.width += 13;
     } else {
       self.blue.height = 1;
       self.blue.width = 2;
@@ -91,9 +106,12 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
   }
 
   self.growPurple = function() {
-    if(self.purple.height < 100) {
-      self.purple.height += 10;
-      self.purple.width += 10;
+    if(self.purple.height < 100 && self.purple.width < 20) {
+      self.purple.height += 14;
+      self.purple.width += 18.25;
+    } else if (self.purple.height < 100 && self.purple.width > 20){
+      self.purple.height += 8;
+      self.purple.width += 13;
     } else {
       self.purple.height = 1;
       self.purple.width = 2;
