@@ -6,4 +6,6 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
 
   self.currentUser = DataFactory.currentUser();
 
+  
+
 }]);

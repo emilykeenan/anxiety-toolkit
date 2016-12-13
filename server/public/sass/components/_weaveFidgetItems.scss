@@ -1,0 +1,21 @@
+.weave_stage {
+  @extend .drag_drop_stage;
+  margin-top: 22%;
+  margin-bottom: 5%;
+}
+
+.gear_container {
+  width: 248px;
+  margin: 0 auto;
+  text-align: center;
+.gear {
+  display: inline;
+  img {
+    width: 60px;
+    text-align: center;
+    &:active {
+      animation: rotate 0.2s linear;
+    }
+  }
+}
+}

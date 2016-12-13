@@ -6,11 +6,17 @@
   }
 }
 
-@-webkit-keyframes slideNav {
+@keyframes slideNav {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
 }
