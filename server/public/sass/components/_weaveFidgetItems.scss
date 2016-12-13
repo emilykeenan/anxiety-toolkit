@@ -11,15 +11,15 @@
     border: 1px solid $dark_accent;
     border-top: 5px solid $dark_accent;
     &.red {
-      left: 9.25%;
+      left: 15.25%;
       background: hsla(330, 68%, 74%, 0.5);
     }
     &.orange {
-      left: 24.25%;
+      left: 28.25%;
       background: hsla(41, 100%, 80%, 0.5);
     }
     &.yellow {
-      left: 39.25%;
+      left: 41.25%;
       background: hsla(56, 86%, 89%, 0.5);
     }
     &.green {
@@ -27,11 +27,11 @@
       background: hsla(115, 38%, 77%, 0.5);
     }
     &.blue {
-      left: 69.25%;
+      left: 67.25%;
       background: hsla(199, 88%, 80%, 0.5);
     }
     &.purple {
-      left: 84.25%;
+      left: 80.25%;
       background: hsla(271, 30%, 66%, 0.5);
     }
   }
