@@ -308,63 +308,63 @@ form {
     border: 1px solid #647375;
     border-top: 5px solid #647375; }
     .weave_stage .vertical.red, .weave_stage .red.horizontal {
-      left: 11.25%;
+      left: 9.25%;
       background: rgba(234, 144, 189, 0.5); }
     .weave_stage .vertical.orange, .weave_stage .orange.horizontal {
-      left: 26.25%;
+      left: 24.25%;
       background: rgba(255, 223, 153, 0.5); }
     .weave_stage .vertical.yellow, .weave_stage .yellow.horizontal {
-      left: 41.25%;
+      left: 39.25%;
       background: rgba(251, 248, 203, 0.5); }
     .weave_stage .vertical.green, .weave_stage .green.horizontal {
-      left: 56.25%;
+      left: 54.25%;
       background: rgba(178, 219, 174, 0.5); }
     .weave_stage .vertical.blue, .weave_stage .blue.horizontal {
-      left: 71.25%;
+      left: 69.25%;
       background: rgba(159, 220, 249, 0.5); }
     .weave_stage .vertical.purple, .weave_stage .purple.horizontal {
-      left: 86.25%;
+      left: 84.25%;
       background: rgba(169, 142, 194, 0.5); }
   .weave_stage .horizontal {
     height: 4%;
     border-top: 1px solid #647375;
     border-left: 5px solid #647375; }
     .weave_stage .horizontal.red {
-      top: 7%;
+      top: 4.5%;
       left: 0;
       background: rgba(234, 144, 189, 0.5); }
       .weave_stage .horizontal.red.second {
-        top: 55%; }
+        top: 52%; }
     .weave_stage .horizontal.orange {
-      top: 15%;
+      top: 12.5%;
       left: 0;
       background: rgba(255, 223, 153, 0.5); }
       .weave_stage .horizontal.orange.second {
-        top: 63%; }
+        top: 60.5%; }
     .weave_stage .horizontal.yellow {
-      top: 23%;
+      top: 20.5%;
       left: 0;
       background: rgba(251, 248, 203, 0.5); }
       .weave_stage .horizontal.yellow.second {
-        top: 71%; }
+        top: 68.5%; }
     .weave_stage .horizontal.green {
-      top: 31%;
+      top: 28.5%;
       left: 0;
       background: rgba(178, 219, 174, 0.5); }
       .weave_stage .horizontal.green.second {
-        top: 78%; }
+        top: 75.5%; }
     .weave_stage .horizontal.blue {
-      top: 39%;
+      top: 36.5%;
       left: 0;
       background: rgba(159, 220, 249, 0.5); }
       .weave_stage .horizontal.blue.second {
-        top: 86%; }
+        top: 83.5%; }
     .weave_stage .horizontal.purple {
-      top: 47%;
+      top: 44.5%;
       left: 0;
       background: rgba(169, 142, 194, 0.5); }
       .weave_stage .horizontal.purple.second {
-        top: 94%; }
+        top: 91.5%; }
 
 .gear_container {
   width: 248px;

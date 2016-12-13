@@ -11,27 +11,27 @@
     border: 1px solid $dark_accent;
     border-top: 5px solid $dark_accent;
     &.red {
-      left: 11.25%;
+      left: 9.25%;
       background: hsla(330, 68%, 74%, 0.5);
     }
     &.orange {
-      left: 26.25%;
+      left: 24.25%;
       background: hsla(41, 100%, 80%, 0.5);
     }
     &.yellow {
-      left: 41.25%;
+      left: 39.25%;
       background: hsla(56, 86%, 89%, 0.5);
     }
     &.green {
-      left: 56.25%;
+      left: 54.25%;
       background: hsla(115, 38%, 77%, 0.5);
     }
     &.blue {
-      left: 71.25%;
+      left: 69.25%;
       background: hsla(199, 88%, 80%, 0.5);
     }
     &.purple {
-      left: 86.25%;
+      left: 84.25%;
       background: hsla(271, 30%, 66%, 0.5);
     }
   }
@@ -41,51 +41,51 @@
     border-top: 1px solid $dark_accent;
     border-left: 5px solid $dark_accent;
     &.red {
-      top: 7%;
+      top: 4.5%;
       left: 0;
       background: hsla(330, 68%, 74%, 0.5);
       &.second {
-        top: 55%;
+        top: 52%;
       }
     }
     &.orange {
-      top: 15%;
+      top: 12.5%;
       left: 0;
       background: hsla(41, 100%, 80%, 0.5);
       &.second {
-        top: 63%;
+        top: 60.5%;
       }
     }
     &.yellow {
-      top: 23%;
+      top: 20.5%;
       left: 0;
       background: hsla(56, 86%, 89%, 0.5);
       &.second {
-        top: 71%;
+        top: 68.5%;
       }
     }
     &.green {
-      top: 31%;
+      top: 28.5%;
       left: 0;
       background: hsla(115, 38%, 77%, 0.5);
       &.second {
-        top: 78%;
+        top: 75.5%;
       }
     }
     &.blue {
-      top: 39%;
+      top: 36.5%;
       left: 0;
       background: hsla(199, 88%, 80%, 0.5);
       &.second {
-        top: 86%;
+        top: 83.5%;
       }
     }
     &.purple {
-      top: 47%;
+      top: 44.5%;
       left: 0;
       background: hsla(271, 30%, 66%, 0.5);
       &.second {
-        top: 94%;
+        top: 91.5%;
       }
     }
   }
