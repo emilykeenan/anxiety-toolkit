@@ -297,7 +297,74 @@ form {
 
 .weave_stage {
   margin-top: 22%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  position: relative; }
+  .weave_stage .vertical, .weave_stage .horizontal {
+    border: 1px solid black;
+    position: absolute;
+    height: 6.25%;
+    width: 26px;
+    border: 1px solid #647375;
+    border-top: 5px solid #647375; }
+    .weave_stage .vertical.red, .weave_stage .red.horizontal {
+      left: 11.25%;
+      background: rgba(234, 144, 189, 0.5); }
+    .weave_stage .vertical.orange, .weave_stage .orange.horizontal {
+      left: 26.25%;
+      background: rgba(255, 223, 153, 0.5); }
+    .weave_stage .vertical.yellow, .weave_stage .yellow.horizontal {
+      left: 41.25%;
+      background: rgba(251, 248, 203, 0.5); }
+    .weave_stage .vertical.green, .weave_stage .green.horizontal {
+      left: 56.25%;
+      background: rgba(178, 219, 174, 0.5); }
+    .weave_stage .vertical.blue, .weave_stage .blue.horizontal {
+      left: 71.25%;
+      background: rgba(159, 220, 249, 0.5); }
+    .weave_stage .vertical.purple, .weave_stage .purple.horizontal {
+      left: 86.25%;
+      background: rgba(169, 142, 194, 0.5); }
+  .weave_stage .horizontal {
+    height: 4%;
+    width: 10%;
+    border-top: 1px solid #647375;
+    border-left: 5px solid #647375; }
+    .weave_stage .horizontal.red {
+      top: 7%;
+      left: 0;
+      background: rgba(234, 144, 189, 0.5); }
+      .weave_stage .horizontal.red.second {
+        top: 55%; }
+    .weave_stage .horizontal.orange {
+      top: 15%;
+      left: 0;
+      background: rgba(255, 223, 153, 0.5); }
+      .weave_stage .horizontal.orange.second {
+        top: 63%; }
+    .weave_stage .horizontal.yellow {
+      top: 23%;
+      left: 0;
+      background: rgba(251, 248, 203, 0.5); }
+      .weave_stage .horizontal.yellow.second {
+        top: 71%; }
+    .weave_stage .horizontal.green {
+      top: 31%;
+      left: 0;
+      background: rgba(178, 219, 174, 0.5); }
+      .weave_stage .horizontal.green.second {
+        top: 78%; }
+    .weave_stage .horizontal.blue {
+      top: 39%;
+      left: 0;
+      background: rgba(159, 220, 249, 0.5); }
+      .weave_stage .horizontal.blue.second {
+        top: 86%; }
+    .weave_stage .horizontal.purple {
+      top: 47%;
+      left: 0;
+      background: rgba(169, 142, 194, 0.5); }
+      .weave_stage .horizontal.purple.second {
+        top: 94%; }
 
 .gear_container {
   width: 248px;
@@ -309,7 +376,7 @@ form {
       width: 60px;
       text-align: center; }
       .gear_container .gear img:active {
-        animation: rotate 0.2s linear; }
+        animation: rotate 0.2s ease-in-out; }
 
 /* ANIMATIONS */
 @keyframes fade {
@@ -326,4 +393,4 @@ form {
 
 @keyframes rotate {
   100% {
-    transform: rotate(360deg); } }
+    transform: rotate(180deg); } }

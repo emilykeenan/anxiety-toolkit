@@ -1,17 +1,29 @@
 <div ng-include="'views/templates/nav.html'"></div>
 <div class="weave_stage">
-  <!-- <ul data-as-sortable data-ng-model="ddc.sortableList">
-  <li ng-repeat="item in ddc.sortableList" data-as-sortable-item class="draggable_circle_container">
-  <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}">
-</div>
-</li>
-</ul> -->
+  <div class="red vertical"></div>
+  <div class="orange vertical"></div>
+  <div class="yellow vertical"></div>
+  <div class="green vertical"></div>
+  <div class="blue vertical"></div>
+  <div class="purple vertical"></div>
+  <div class="red horizontal"></div>
+  <div class="orange horizontal"></div>
+  <div class="yellow horizontal"></div>
+  <div class="green horizontal"></div>
+  <div class="blue horizontal"></div>
+  <div class="purple horizontal"></div>
+  <div class="red second horizontal"></div>
+  <div class="orange second horizontal"></div>
+  <div class="yellow second horizontal"></div>
+  <div class="green second horizontal"></div>
+  <div class="blue second horizontal"></div>
+  <div class="purple second horizontal"></div>
 </div>
 <div class="gear_container">
-  <div class="gear"><img src="/assets/images/gearred.svg"</div>
-  <div class="gear"><img src="/assets/images/gearorange.svg"</div>
-  <div class="gear"><img src="/assets/images/gearyellow.svg"</div>
-  <div class="gear"><img src="/assets/images/geargreen.svg"</div>
-  <div class="gear"><img src="/assets/images/gearblue.svg"</div>
-  <div class="gear"><img src="/assets/images/gearpurple.svg"</div>
+  <div class="gear"><img src="/assets/images/gearred.svg" ng-click="growRed()" /></div>
+  <div class="gear"><img src="/assets/images/gearorange.svg" ng-click="growOrange()" /></div>
+  <div class="gear"><img src="/assets/images/gearyellow.svg" ng-click="growYellow()" /></div>
+  <div class="gear"><img src="/assets/images/geargreen.svg" ng-click="growGreen()" /></div>
+  <div class="gear"><img src="/assets/images/gearblue.svg" ng-click="growBlue()" /></div>
+  <div class="gear"><img src="/assets/images/gearpurple.svg" ng-click="growPurple()" /></div>
 </div>

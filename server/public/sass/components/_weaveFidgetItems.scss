@@ -2,20 +2,108 @@
   @extend .drag_drop_stage;
   margin-top: 22%;
   margin-bottom: 5%;
+  position: relative;
+  .vertical {
+    border: 1px solid black;
+    position: absolute;
+    height: 6.25%;
+    width: 26px;
+    border: 1px solid $dark_accent;
+    border-top: 5px solid $dark_accent;
+    &.red {
+      left: 11.25%;
+      background: hsla(330, 68%, 74%, 0.5);
+    }
+    &.orange {
+      left: 26.25%;
+      background: hsla(41, 100%, 80%, 0.5);
+    }
+    &.yellow {
+      left: 41.25%;
+      background: hsla(56, 86%, 89%, 0.5);
+    }
+    &.green {
+      left: 56.25%;
+      background: hsla(115, 38%, 77%, 0.5);
+    }
+    &.blue {
+      left: 71.25%;
+      background: hsla(199, 88%, 80%, 0.5);
+    }
+    &.purple {
+      left: 86.25%;
+      background: hsla(271, 30%, 66%, 0.5);
+    }
+  }
+  .horizontal {
+    @extend .vertical;
+    height: 4%;
+    width: 10%;
+    border-top: 1px solid $dark_accent;
+    border-left: 5px solid $dark_accent;
+    &.red {
+      top: 7%;
+      left: 0;
+      background: hsla(330, 68%, 74%, 0.5);
+      &.second {
+        top: 55%;
+      }
+    }
+    &.orange {
+      top: 15%;
+      left: 0;
+      background: hsla(41, 100%, 80%, 0.5);
+      &.second {
+        top: 63%;
+      }
+    }
+    &.yellow {
+      top: 23%;
+      left: 0;
+      background: hsla(56, 86%, 89%, 0.5);
+      &.second {
+        top: 71%;
+      }
+    }
+    &.green {
+      top: 31%;
+      left: 0;
+      background: hsla(115, 38%, 77%, 0.5);
+      &.second {
+        top: 78%;
+      }
+    }
+    &.blue {
+      top: 39%;
+      left: 0;
+      background: hsla(199, 88%, 80%, 0.5);
+      &.second {
+        top: 86%;
+      }
+    }
+    &.purple {
+      top: 47%;
+      left: 0;
+      background: hsla(271, 30%, 66%, 0.5);
+      &.second {
+        top: 94%;
+      }
+    }
+  }
 }
 
 .gear_container {
   width: 248px;
   margin: 0 auto;
   text-align: center;
-.gear {
-  display: inline;
-  img {
-    width: 60px;
-    text-align: center;
-    &:active {
-      animation: rotate 0.2s linear;
+  .gear {
+    display: inline;
+    img {
+      width: 60px;
+      text-align: center;
+      &:active {
+        animation: rotate 0.2s ease-in-out;
+      }
     }
   }
-}
 }
