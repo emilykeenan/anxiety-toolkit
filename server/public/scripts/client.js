@@ -1,6 +1,6 @@
 console.log('hallo world');
 
-var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'as.sortable']);
+var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'as.sortable', 'pw.canvas-painter']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -33,6 +33,11 @@ app.config(['$routeProvider', function($routeProvider) {
       templateUrl: '/views/templates/weavefidget.html',
       controller: 'WeaveController',
       controllerAs: 'wc'
+    })
+    .when('/drawfidget' ,{
+      templateUrl: '/views/templates/drawfidget.html',
+      controller: 'DrawController',
+      controllerAs: 'dc'
     })
     .otherwise({
       redirectTo: 'home'
