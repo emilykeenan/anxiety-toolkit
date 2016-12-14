@@ -1,4 +1,3 @@
 <div ng-include="'views/templates/nav.html'"></div>
-
-<div pw-canvas options="{color: model.myColor}"></div>
-<div pw-color-selector="['#000', '#00f', '#0f0', '#f00']" color="model.myColor"></div>
+<canvas id="drawing_stage" class="drawing_stage" height="280" width="288"></canvas>
+<button ng-click="dc.changeColor()">Change Color</button>

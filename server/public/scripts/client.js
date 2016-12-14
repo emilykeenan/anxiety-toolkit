@@ -1,6 +1,6 @@
 console.log('hallo world');
 
-var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'as.sortable', 'pw.canvas-painter']);
+var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'as.sortable']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
