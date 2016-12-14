@@ -308,21 +308,39 @@ form {
     .weave_stage .vertical.red, .weave_stage .red.horizontal {
       left: 15.25%;
       background: rgba(234, 144, 189, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.red, .weave_stage .red.horizontal {
+          left: 14.8%; } }
     .weave_stage .vertical.orange, .weave_stage .orange.horizontal {
       left: 28%;
       background: rgba(255, 223, 153, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.orange, .weave_stage .orange.horizontal {
+          left: 27.7%; } }
     .weave_stage .vertical.yellow, .weave_stage .yellow.horizontal {
       left: 41%;
       background: rgba(251, 248, 203, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.yellow, .weave_stage .yellow.horizontal {
+          left: 40.6%; } }
     .weave_stage .vertical.green, .weave_stage .green.horizontal {
       left: 54%;
       background: rgba(178, 219, 174, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.green, .weave_stage .green.horizontal {
+          left: 53.7%; } }
     .weave_stage .vertical.blue, .weave_stage .blue.horizontal {
       left: 67.25%;
       background: rgba(159, 220, 249, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.blue, .weave_stage .blue.horizontal {
+          left: 66.7%; } }
     .weave_stage .vertical.purple, .weave_stage .purple.horizontal {
       left: 80.25%;
       background: rgba(169, 142, 194, 0.5); }
+      @media (min-width: 768px) {
+        .weave_stage .vertical.purple, .weave_stage .purple.horizontal {
+          left: 79.7%; } }
   .weave_stage .horizontal {
     height: 4%;
     border-top: 1px solid #647375;
@@ -333,40 +351,73 @@ form {
       background: rgba(234, 144, 189, 0.5); }
       .weave_stage .horizontal.red.second {
         top: 52%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.red.second {
+            top: 51.7%; } }
     .weave_stage .horizontal.orange {
       top: 12%;
       left: 0;
       background: rgba(255, 223, 153, 0.5); }
       .weave_stage .horizontal.orange.second {
         top: 60%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.orange.second {
+            top: 59.7%; } }
+      @media (min-width: 768px) {
+        .weave_stage .horizontal.orange {
+          top: 11.7%; } }
     .weave_stage .horizontal.yellow {
       top: 20%;
       left: 0;
       background: rgba(251, 248, 203, 0.5); }
       .weave_stage .horizontal.yellow.second {
         top: 68%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.yellow.second {
+            top: 67.7%; } }
+      @media (min-width: 768px) {
+        .weave_stage .horizontal.yellow {
+          top: 19.7%; } }
     .weave_stage .horizontal.green {
       top: 28%;
       left: 0;
       background: rgba(178, 219, 174, 0.5); }
       .weave_stage .horizontal.green.second {
         top: 76%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.green.second {
+            top: 75.7%; } }
+      @media (min-width: 768px) {
+        .weave_stage .horizontal.green {
+          top: 27.6%; } }
     .weave_stage .horizontal.blue {
       top: 36%;
       left: 0;
       background: rgba(159, 220, 249, 0.5); }
       .weave_stage .horizontal.blue.second {
         top: 84%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.blue.second {
+            top: 83.6%; } }
+      @media (min-width: 768px) {
+        .weave_stage .horizontal.blue {
+          top: 35.7%; } }
     .weave_stage .horizontal.purple {
       top: 44%;
       left: 0;
       background: rgba(169, 142, 194, 0.5); }
       .weave_stage .horizontal.purple.second {
         top: 92%; }
+        @media (min-width: 768px) {
+          .weave_stage .horizontal.purple.second {
+            top: 91.7%; } }
+      @media (min-width: 768px) {
+        .weave_stage .horizontal.purple {
+          top: 43.6%; } }
   @media (min-width: 768px) {
     .weave_stage {
       margin: 9% 20% auto 20%;
-      float: left; } }
+      display: inline-block; } }
 
 .gear_container {
   width: 248px;
@@ -381,10 +432,15 @@ form {
         animation: rotate 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .gear_container {
-      margin: -45% auto;
-      float: right; }
-      .gear_container .gear {
-        display: block; } }
+      width: 600px;
+      margin: 0 auto; }
+      .gear_container .gear img {
+        width: 60px; } }
+
+@media (min-width: 768px) {
+  .weave_container {
+    width: 50%;
+    margin: 5% auto; } }
 
 /* ANIMATIONS */
 @keyframes fade {

@@ -13,26 +13,44 @@
     &.red {
       left: 15.25%;
       background: hsla(330, 68%, 74%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 14.8%;
+      }
     }
     &.orange {
       left: 28%;
       background: hsla(41, 100%, 80%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 27.7%;
+      }
     }
     &.yellow {
       left: 41%;
       background: hsla(56, 86%, 89%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 40.6%;
+      }
     }
     &.green {
       left: 54%;
       background: hsla(115, 38%, 77%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 53.7%;
+      }
     }
     &.blue {
       left: 67.25%;
       background: hsla(199, 88%, 80%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 66.7%;
+      }
     }
     &.purple {
       left: 80.25%;
       background: hsla(271, 30%, 66%, 0.5);
+      @media (min-width: $mobile-width) {
+        left: 79.7%;
+      }
     }
   }
   .horizontal {
@@ -46,6 +64,9 @@
       background: hsla(330, 68%, 74%, 0.5);
       &.second {
         top: 52%;
+        @media (min-width: $mobile-width) {
+          top: 51.7%;
+        }
       }
     }
     &.orange {
@@ -54,6 +75,12 @@
       background: hsla(41, 100%, 80%, 0.5);
       &.second {
         top: 60%;
+        @media (min-width: $mobile-width) {
+          top: 59.7%;
+        }
+      }
+      @media (min-width: $mobile-width) {
+        top: 11.7%;
       }
     }
     &.yellow {
@@ -62,6 +89,12 @@
       background: hsla(56, 86%, 89%, 0.5);
       &.second {
         top: 68%;
+        @media (min-width: $mobile-width) {
+          top: 67.7%;
+        }
+      }
+      @media (min-width: $mobile-width) {
+        top: 19.7%;
       }
     }
     &.green {
@@ -70,6 +103,12 @@
       background: hsla(115, 38%, 77%, 0.5);
       &.second {
         top: 76%;
+        @media (min-width: $mobile-width) {
+          top: 75.7%;
+        }
+      }
+      @media (min-width: $mobile-width) {
+        top: 27.6%;
       }
     }
     &.blue {
@@ -78,6 +117,12 @@
       background: hsla(199, 88%, 80%, 0.5);
       &.second {
         top: 84%;
+        @media (min-width: $mobile-width) {
+          top: 83.6%;
+        }
+      }
+      @media (min-width: $mobile-width) {
+        top: 35.7%;
       }
     }
     &.purple {
@@ -86,12 +131,18 @@
       background: hsla(271, 30%, 66%, 0.5);
       &.second {
         top: 92%;
+        @media (min-width: $mobile-width) {
+          top: 91.7%;
+        }
+      }
+      @media (min-width: $mobile-width) {
+        top: 43.6%;
       }
     }
   }
   @media (min-width: $mobile-width) {
     margin: 9% 20% auto 20%;
-    float: left;
+    display: inline-block;
   }
 }
 
@@ -110,10 +161,19 @@
     }
   }
   @media (min-width: $mobile-width) {
-    margin: -45% auto;
-    float: right;
+    width: 600px;
+    margin: 0 auto;
     .gear {
-      display: block;
+      img {
+        width: 60px;
+      }
     }
+  }
+}
+
+.weave_container {
+  @media (min-width: $mobile-width) {
+    width: 50%;
+    margin: 5% auto;
   }
 }
