@@ -9,6 +9,8 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.logOut = DataFactory.logOut;
   self.loggedIn = DataFactory.loggedIn();
 
+  var interval;
+
   var red = 'hsla(330, 68%, 74%, 1)';
   var orange = 'hsla(41, 100%, 80%, 1)';
   var yellow = 'hsla(56, 86%, 89%, 1)';
@@ -22,8 +24,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.colorFour = green;
   self.colorFive = blue;
   self.colorSix = purple;
-
-  // setInterval(changeAllColors, 1000);
 
   var canvas = document.getElementById('drawing_stage');
   var context = document.getElementById('drawing_stage').getContext('2d');
@@ -309,6 +309,16 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
     self.changeColorFour();
     self.changeColorFive();
     self.changeColorSix();
+  }
+
+  self.startAnimation = function() {
+      interval = setInterval(changeAllColors, 1000);
+  }
+
+  self.stopAnimation = function() {
+    console.log('clicked');
+    clearInterval(interval);
+    interval = null;
   }
 
 
