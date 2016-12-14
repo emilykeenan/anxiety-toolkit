@@ -9,12 +9,12 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.logOut = DataFactory.logOut;
   self.loggedIn = DataFactory.loggedIn();
 
-  var red = 'hsla(330, 68%, 74%, 0.5)';
-  var orange = 'hsla(41, 100%, 80%, 0.5)';
-  var yellow = 'hsla(56, 86%, 89%, 0.5)';
-  var green = 'hsla(115, 38%, 77%, 0.5)';
-  var blue = 'hsla(199, 88%, 80%, 0.5)';
-  var purple = 'hsla(271, 30%, 66%, 0.5)';
+  var red = 'hsla(330, 68%, 74%, 1)';
+  var orange = 'hsla(41, 100%, 80%, 1)';
+  var yellow = 'hsla(56, 86%, 89%, 1)';
+  var green = 'hsla(115, 38%, 77%, 1)';
+  var blue = 'hsla(199, 88%, 80%, 1)';
+  var purple = 'hsla(271, 30%, 66%, 1)';
 
   self.colorOne = red;
   self.colorTwo = orange;
@@ -23,7 +23,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.colorFive = blue;
   self.colorSix = purple;
 
-  setInterval(changeAllColors, 1000);
+  // setInterval(changeAllColors, 1000);
 
   var canvas = document.getElementById('drawing_stage');
   var context = document.getElementById('drawing_stage').getContext('2d');
@@ -31,6 +31,9 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
     drawCircleOne();
     drawCircleTwo();
     drawCircleThree();
+    drawCircleFour();
+    drawCircleFive();
+    drawCircleSix();
   }
 
   function drawCircleOne() {
@@ -74,7 +77,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleThree() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 60;
+    var radius = 110;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
@@ -85,6 +88,63 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
 
     // line color
     context.fillStyle = self.colorThree;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+  }
+
+  function drawCircleFour() {
+    var x = canvas.width / 2;
+    var y = canvas.height / 2;
+    var radius = 90;
+    var startAngle = 1.1 * Math.PI;
+    var endAngle = 365;
+    var counterClockwise = false;
+
+    context.beginPath();
+    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+    context.lineWidth = 2;
+
+    // line color
+    context.fillStyle = self.colorFour;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+  }
+
+  function drawCircleFive() {
+    var x = canvas.width / 2;
+    var y = canvas.height / 2;
+    var radius = 70;
+    var startAngle = 1.1 * Math.PI;
+    var endAngle = 365;
+    var counterClockwise = false;
+
+    context.beginPath();
+    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+    context.lineWidth = 2;
+
+    // line color
+    context.fillStyle = self.colorFive;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+  }
+
+  function drawCircleSix() {
+    var x = canvas.width / 2;
+    var y = canvas.height / 2;
+    var radius = 50;
+    var startAngle = 1.1 * Math.PI;
+    var endAngle = 365;
+    var counterClockwise = false;
+
+    context.beginPath();
+    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+    context.lineWidth = 2;
+
+    // line color
+    context.fillStyle = self.colorSix;
     context.strokeStyle = '#647375';
     context.fill();
     context.stroke();
@@ -118,7 +178,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   self.changeColorTwo = function() {
-    console.log('button clicked;');
     context.clearRect(0, 0, canvas.width, canvas.height);
     switch (self.colorTwo) {
       case red:
@@ -144,7 +203,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   self.changeColorThree = function() {
-    console.log('button clicked;');
     context.clearRect(0, 0, canvas.width, canvas.height);
     switch (self.colorThree) {
       case red:
@@ -170,7 +228,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   self.changeColorFour = function() {
-    console.log('button clicked;');
     context.clearRect(0, 0, canvas.width, canvas.height);
     switch (self.colorFour) {
       case red:
@@ -196,7 +253,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   self.changeColorFive = function() {
-    console.log('button clicked;');
     context.clearRect(0, 0, canvas.width, canvas.height);
     switch (self.colorFive) {
       case red:
@@ -222,7 +278,6 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   self.changeColorSix = function() {
-    console.log('button clicked;');
     context.clearRect(0, 0, canvas.width, canvas.height);
     switch (self.colorSix) {
       case red:
