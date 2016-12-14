@@ -137,6 +137,7 @@
       }
       @media (min-width: $mobile-width) {
         top: 43.6%;
+        margin: 0 auto;
       }
     }
   }
@@ -161,9 +162,10 @@
     }
   }
   @media (min-width: $mobile-width) {
-    width: 600px;
+    width: 300px;
     margin: 0 auto;
     .gear {
+      padding: 2%;
       img {
         width: 60px;
       }
@@ -175,5 +177,6 @@
   @media (min-width: $mobile-width) {
     width: 50%;
     margin: 5% auto;
+    text-align: center;
   }
 }

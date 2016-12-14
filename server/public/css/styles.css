@@ -413,7 +413,8 @@ form {
             top: 91.7%; } }
       @media (min-width: 768px) {
         .weave_stage .horizontal.purple {
-          top: 43.6%; } }
+          top: 43.6%;
+          margin: 0 auto; } }
   @media (min-width: 768px) {
     .weave_stage {
       margin: 9% 20% auto 20%;
@@ -432,15 +433,18 @@ form {
         animation: rotate 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .gear_container {
-      width: 600px;
+      width: 300px;
       margin: 0 auto; }
-      .gear_container .gear img {
-        width: 60px; } }
+      .gear_container .gear {
+        padding: 2%; }
+        .gear_container .gear img {
+          width: 60px; } }
 
 @media (min-width: 768px) {
   .weave_container {
     width: 50%;
-    margin: 5% auto; } }
+    margin: 5% auto;
+    text-align: center; } }
 
 /* ANIMATIONS */
 @keyframes fade {
