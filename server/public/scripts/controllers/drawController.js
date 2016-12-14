@@ -58,7 +58,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleTwo() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 130;
+    var radius = 135;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
@@ -77,7 +77,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleThree() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 100;
+    var radius = 105;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
@@ -96,7 +96,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleFour() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 70;
+    var radius = 75;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
@@ -115,7 +115,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleFive() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 40;
+    var radius = 45;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
@@ -134,7 +134,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   function drawCircleSix() {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = 10;
+    var radius = 20;
     var startAngle = 1.1 * Math.PI;
     var endAngle = 365;
     var counterClockwise = false;
