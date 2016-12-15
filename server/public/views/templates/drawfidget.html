@@ -1,7 +1,7 @@
 <div ng-include="'views/templates/nav.html'"></div>
 <div class="drawing_container">
   <canvas id="drawing_stage" class="drawing_stage" height="288" width="288"></canvas>
-  <div id="draw_button_container">
+  <div class="draw_button_container">
     <button class="color_button" ng-click="dc.changeColorOne()" ng-style="{'background': dc.colorOne}"> </button>
     <button class="color_button" ng-click="dc.changeColorTwo()" ng-style="{'background': dc.colorTwo}"> </button>
     <button class="color_button" ng-click="dc.changeColorThree()" ng-style="{'background': dc.colorThree}"> </button>
@@ -10,8 +10,8 @@
     <button class="color_button" ng-click="dc.changeColorSix()" ng-style="{'background': dc.colorSix}"> </button>
     <button class="color_button" ng-click="dc.startAnimation()">></button>
     <button class="color_button" ng-click="dc.stopAnimation()">||</button>
-    <button class="color_button" ng-click="dc.changeToCircles()">circles</button>
-    <button class="color_button" ng-click="dc.changeToSquares()">squares</button>
-    <button class="color_button" ng-click="dc.changeToTriangles()">triangles</button>
+    <button class="color_button" ng-click="dc.changeToCircles()">&#x25CE;</button>
+    <button class="color_button" ng-click="dc.changeToSquares()">&#x25A3;</button>
+    <button class="color_button" ng-click="dc.changeToTriangles()">&#x25B5;</button>
   </div>
 </div>

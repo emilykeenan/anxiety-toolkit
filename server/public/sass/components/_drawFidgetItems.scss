@@ -10,6 +10,8 @@
   height: 20px;
   width: 20px;
   border-radius: 50%;
+  text-align: center;
+  padding: 0;
 }
 
 .drawing_container {
@@ -19,4 +21,10 @@
   @media (min-width: $mobile-width) {
     margin-top: 0;
   }
+}
+
+.draw_button_container {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
 }

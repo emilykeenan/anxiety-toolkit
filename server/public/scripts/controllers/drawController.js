@@ -28,7 +28,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.colorFour = green;
   self.colorFive = blue;
   self.colorSix = purple;
-  self.currentShapes = 'triangles';
+  self.currentShapes = 'squares';
 
   // declaring canvas and context
   var canvas = document.getElementById('drawing_stage');
@@ -44,8 +44,12 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
     } else if (self.currentShapes == 'triangles') {
       drawTriangles();
     } else {
-      drawCircles();
+      drawSquares();
     }
+  }
+
+  function drawSquares() {
+    
   }
 
   // function to draw triangles
