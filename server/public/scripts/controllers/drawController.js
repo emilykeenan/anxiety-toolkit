@@ -1337,28 +1337,22 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
 
   // function to change current shape to circles and redraw canvas
   self.changeToCircles = function() {
-    console.log(self.currentShapes);
     context.clearRect(0, 0, canvas.width, canvas.height);
     self.currentShapes = 'circles';
-    console.log(self.currentShapes);
     draw();
   }
 
   // function to change current shape to squares and redraw canvas
   self.changeToSquares = function() {
-    console.log(self.currentShapes);
     context.clearRect(0, 0, canvas.width, canvas.height);
     self.currentShapes = 'squares';
-    console.log(self.currentShapes);
     draw();
   }
 
   // function to change current shape to triangles and redraw canvas
   self.changeToTriangles = function() {
-    console.log(self.currentShapes);
     context.clearRect(0, 0, canvas.width, canvas.height);
     self.currentShapes = 'triangles';
-    console.log(self.currentShapes);
     draw();
   }
 
