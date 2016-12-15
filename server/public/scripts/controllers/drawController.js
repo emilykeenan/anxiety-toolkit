@@ -17,6 +17,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   var green = 'hsla(115, 38%, 77%, 1)';
   var blue = 'hsla(199, 88%, 80%, 1)';
   var purple = 'hsla(271, 30%, 66%, 1)';
+  var background = 'hsla(170, 51%, 92%, 0.5)';
 
   self.colorOne = red;
   self.colorTwo = orange;
@@ -171,8 +172,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorOne = purple;
       break;
       case purple:
-      self.colorOne = red;
+      self.colorOne = background;
       break;
+      case background:
+      self.colorOne = red;
     }
     draw();
   }
@@ -196,8 +199,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorTwo = purple;
       break;
       case purple:
-      self.colorTwo = red;
+      self.colorTwo = background;
       break;
+      case background:
+      self.colorTwo = red;
     }
     draw();
   }
@@ -221,8 +226,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorThree = purple;
       break;
       case purple:
-      self.colorThree = red;
+      self.colorThree = background;
       break;
+      case background:
+      self.colorThree = red;
     }
     draw();
   }
@@ -246,8 +253,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorFour = purple;
       break;
       case purple:
-      self.colorFour = red;
+      self.colorFour = background;
       break;
+      case background:
+      self.colorFour = red;
     }
     draw();
   }
@@ -271,8 +280,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorFive = purple;
       break;
       case purple:
-      self.colorFive = red;
+      self.colorFive = background;
       break;
+      case background:
+      self.colorFive = red;
     }
     draw();
   }
@@ -296,8 +307,10 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
       self.colorSix = purple;
       break;
       case purple:
-      self.colorSix = red;
+      self.colorSix = background;
       break;
+      case background:
+      self.colorSix = red;
     }
     draw();
   }
