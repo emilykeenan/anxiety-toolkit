@@ -28,7 +28,7 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   self.colorFour = green;
   self.colorFive = blue;
   self.colorSix = purple;
-  self.currentShapes = 'squares';
+  self.currentShapes = 'rectangles';
 
   // declaring canvas and context
   var canvas = document.getElementById('drawing_stage');
@@ -44,12 +44,13 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
     } else if (self.currentShapes == 'triangles') {
       drawTriangles();
     } else {
-      drawSquares();
+      drawRectangles();
     }
   }
 
-  function drawSquares() {
-    
+  function drawRectangles() {
+    drawRectanglesOne();
+    drawRectanglesTwo();
   }
 
   // function to draw triangles
@@ -1153,6 +1154,129 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
 
   }
 
+  //function to draw rectangles
+  function drawRectanglesOne() {
+    context.beginPath();
+    context.moveTo(0, 0);
+    context.lineTo(0, 288);
+    context.lineTo(48, 288);
+    context.lineTo(48, 0);
+    context.lineTo(0, 0);
+    context.closePath();
+    context.fillStyle = self.colorOne;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(48, 0);
+    context.lineTo(48, 288);
+    context.lineTo(96, 288);
+    context.lineTo(96, 0);
+    context.lineTo(48, 0);
+    context.closePath();
+    context.fillStyle = self.colorTwo;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(96, 0);
+    context.lineTo(96, 288);
+    context.lineTo(144, 288);
+    context.lineTo(144, 0);
+    context.lineTo(96, 0);
+    context.closePath();
+    context.fillStyle = self.colorThree;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(144, 0);
+    context.lineTo(144, 288);
+    context.lineTo(192, 288);
+    context.lineTo(192, 0);
+    context.lineTo(144, 0);
+    context.closePath();
+    context.fillStyle = self.colorFour;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(192, 0);
+    context.lineTo(192, 288);
+    context.lineTo(240, 288);
+    context.lineTo(240, 0);
+    context.lineTo(192, 0);
+    context.closePath();
+    context.fillStyle = self.colorFive;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(240, 0);
+    context.lineTo(240, 288);
+    context.lineTo(288, 288);
+    context.lineTo(288, 0);
+    context.lineTo(240, 0);
+    context.closePath();
+    context.fillStyle = self.colorSix;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+  }
+
+  function drawRectanglesTwo() {
+    context.beginPath();
+    context.moveTo(48, 48);
+    context.lineTo(48, 96);
+    context.lineTo(288, 96);
+    context.lineTo(288, 48);
+    context.lineTo(96, 48);
+    context.closePath();
+    context.fillStyle = self.colorOne;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(0, 144);
+    context.lineTo(0, 196);
+    context.lineTo(240, 196);
+    context.lineTo(240, 144);
+    context.lineTo(48, 144);
+    context.closePath();
+    context.fillStyle = self.colorThree;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(48, 240);
+    context.lineTo(48, 388);
+    context.lineTo(288, 388);
+    context.lineTo(288, 240);
+    context.lineTo(48, 240);
+    context.closePath();
+    context.fillStyle = self.colorTwo;
+    context.lineWidth = 1;
+    context.strokeStyle = '#647375';
+    context.fill();
+    context.stroke();
+  }
+
 
   // functions to change individual colors
   self.changeColorOne = function() {
@@ -1347,9 +1471,9 @@ app.controller('DrawController', ['$firebaseAuth', 'DataFactory', function($fire
   }
 
   // function to change current shape to squares and redraw canvas
-  self.changeToSquares = function() {
+  self.changeToRectangles = function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-    self.currentShapes = 'squares';
+    self.currentShapes = 'rectangles';
     draw();
   }
 
