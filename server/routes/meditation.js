@@ -1,14 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var connectionString = 'postgres://localhost:5432/anxietytoolkit';
-
-if(process.env.DATABASE_URL != undefined) {
-    connectionString = process.env.DATABASE_URL + "?ssl=true";
-} else {
-    // running locally, use our local database instead
-    connectionString = 'postgres://localhost:5432/anxietytoolkit';
-}
 
 
 // request to get meditations from database
