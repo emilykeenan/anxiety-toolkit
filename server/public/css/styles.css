@@ -276,12 +276,21 @@ form {
       height: 615px;
       margin-bottom: 2%; } }
 
+.circle_list {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  width: 32px; }
+
 .draggable_circle {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   float: left;
-  border: solid 0.5px black; }
+  border: solid 0.5px black;
+  margin: 2px; }
   @media (min-width: 768px) {
     .draggable_circle {
       height: 50px;

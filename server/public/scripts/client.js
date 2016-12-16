@@ -1,6 +1,6 @@
 console.log('hallo world');
 
-var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute', 'as.sortable']);
+var app = angular.module('anxietyToolkit', ['firebase', 'ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider

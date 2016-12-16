@@ -1,16 +1,16 @@
 <div ng-include="'views/templates/nav.html'"></div>
 <div class="drag_drop_stage" ng-show="ddc.swappingDots">
-  <ul data-as-sortable data-ng-model="ddc.sortableList">
-    <li ng-repeat="item in ddc.sortableList track by $index" data-as-sortable-item class="draggable_circle_container">
-      <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
+  <ul>
+    <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
+      <div class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
       </div>
     </li>
   </ul>
 </div>
 <div class="drag_drop_stage" ng-show="ddc.fillingDots">
-  <ul data-as-sortable data-ng-model="ddc.sortableList">
-    <li ng-repeat="item in ddc.sortableList track by $index" data-as-sortable-item class="draggable_circle_container">
-      <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
+  <ul>
+    <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
+      <div class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
       </div>
     </li>
   </ul>
