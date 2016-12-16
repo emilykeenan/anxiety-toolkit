@@ -19,7 +19,10 @@ input {
   border: 1px solid #647375; }
 
 button {
-  margin: 0px; }
+  margin: 0px;
+  outline: none; }
+  button:focus {
+    outline: none; }
 
 /* MEDITATION CHOICE BUTTONS */
 .meditation_container {
