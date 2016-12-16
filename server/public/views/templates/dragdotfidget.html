@@ -1,5 +1,5 @@
 <div ng-include="'views/templates/nav.html'"></div>
-<div class="drag_drop_stage">
+<div class="drag_drop_stage" ng-show="ddc.swappingDots">
   <ul data-as-sortable data-ng-model="ddc.sortableList">
     <li ng-repeat="item in ddc.sortableList track by $index" data-as-sortable-item class="draggable_circle_container">
       <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
@@ -7,3 +7,18 @@
     </li>
   </ul>
 </div>
+<div class="drag_drop_stage" ng-show="ddc.fillingDots">
+  <ul data-as-sortable data-ng-model="ddc.sortableList">
+    <li ng-repeat="item in ddc.sortableList track by $index" data-as-sortable-item class="draggable_circle_container">
+      <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
+      </div>
+    </li>
+  </ul>
+</div>
+<button ng-click="ddc.shuffleDots()">Shuffle</button>
+<button ng-click="ddc.switchToRainbowTheme()">Rainbow Theme</button>
+<button ng-click="ddc.switchToLightRainbowTheme()">Light Theme</button>
+<button ng-click="ddc.switchToGrayscaleTheme()">Gray Theme</button>
+<button ng-click="ddc.clearFillData()" ng-show="ddc.fillingDots">Pick a New Color</button>
+<button ng-click="ddc.switchToFill()" ng-show="ddc.swappingDots">Switch to Fill</button>
+<button ng-click="ddc.switchToSort()" ng-show="ddc.fillingDots">Switch to Sort</button>
