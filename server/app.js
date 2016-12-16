@@ -4,14 +4,6 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var decoder = require('./modules/decoder');
 var meditation = require('./routes/meditation');
-var DATABASE_URL = '';
-
-if(process.env.DATABASE_URL != undefined) {
-    DATABASE_URL = process.env.DATABASE_URL + "?ssl=true";
-} else {
-    // running locally, use our local database instead
-    DATABASE_URL = 'postgres://localhost:5432/anxietytoolkit';
-}
 
 // static files
 app.get('/', function (req, res) {
