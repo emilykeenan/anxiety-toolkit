@@ -1,4 +1,4 @@
-app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($firebaseAuth, DataFactory) {
+app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', function($firebaseAuth, DataFactory, $route) {
 
   console.log('drag dot controller is running');
 
@@ -578,6 +578,11 @@ self.switchToSort = function() {
   self.swappingDots = true;
   tempForSwap = null;
   tempIndexForSwap = null;
+}
+
+self.reset = function() {
+  window.location = "/#/dragdotfidget.";
+  window.location = "/#/dragdotfidget";
 }
 
 }]);

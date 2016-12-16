@@ -9,7 +9,6 @@ app.controller('NavigationController', ['$firebaseAuth', 'DataFactory', function
 
   self.signOut = function() {
     self.logOut();
-
   }
 
 }]);
