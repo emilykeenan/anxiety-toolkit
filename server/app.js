@@ -4,13 +4,13 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var decoder = require('./modules/decoder');
 var meditation = require('./routes/meditation');
-var connectionString = '';
+var DATABASE_URL = '';
 
 if(process.env.DATABASE_URL != undefined) {
-    connectionString = process.env.DATABASE_URL + "?ssl=true";
+    DATABASE_URL = process.env.DATABASE_URL + "?ssl=true";
 } else {
     // running locally, use our local database instead
-    connectionString = 'postgres://localhost:5432/anxietytoolkit';
+    DATABASE_URL = 'postgres://localhost:5432/anxietytoolkit';
 }
 
 // static files
