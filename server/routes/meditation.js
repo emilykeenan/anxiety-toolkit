@@ -8,7 +8,7 @@ if(process.env.DATABASE_URL != undefined) {
     connectionString = process.env.DATABASE_URL + "?ssl=true";
 } else {
     // running locally, use our local database instead
-    connectionString = 'postgres://localhost:5432/local_db_name';
+    connectionString = 'postgres://localhost:5432/anxietytoolkit';
 }
 
 
