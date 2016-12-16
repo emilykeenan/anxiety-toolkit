@@ -172,6 +172,23 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', function($f
     }
   ];
 
+  var tempForSwap = null;
+  var tempIndexForSwap = null;
+
+  self.swapDot = function(item, i) {
+    if (tempForSwap === null) {
+      tempForSwap = item;
+      tempIndexForSwap = i;
+      console.log(tempForSwap);
+    } else {
+      self.sortableList[tempIndexForSwap] = self.sortableList[i];
+      self.sortableList[i] = tempForSwap;
+      tempForSwap = null;
+      tempIndexForSwap = null;
+
+    }
+  }
+
   // Fisher-Yates Shuffle added to randomize order of colored dots
   function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;

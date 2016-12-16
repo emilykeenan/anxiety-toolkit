@@ -1,8 +1,8 @@
 <div ng-include="'views/templates/nav.html'"></div>
 <div class="drag_drop_stage">
   <ul data-as-sortable data-ng-model="ddc.sortableList">
-    <li ng-repeat="item in ddc.sortableList" data-as-sortable-item class="draggable_circle_container">
-      <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}">
+    <li ng-repeat="item in ddc.sortableList track by $index" data-as-sortable-item class="draggable_circle_container">
+      <div data-as-sortable-item-handle class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
       </div>
     </li>
   </ul>
