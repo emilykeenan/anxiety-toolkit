@@ -3,6 +3,9 @@
   margin: 20% 5% auto 5%;
   height: 280px;
   width: 288px;
+  @media (min-width: $mobile-width) {
+    margin-top: 30%;
+  }
 }
 
 .color_button {
