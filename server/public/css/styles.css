@@ -316,6 +316,9 @@ form {
     font-size: 12px;
     margin-bottom: 5px; }
 
+.selected {
+  border: 1px solid white; }
+
 .weave_stage {
   margin-top: 25%;
   margin-bottom: 10%;

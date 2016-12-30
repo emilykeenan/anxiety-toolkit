@@ -67,7 +67,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
       color: "hsla(29, 95%, 45%, 1)"
     },
     {
-      color: "hsla(29, 95%, 55%, 1"
+      color: "hsla(29, 95%, 55%, 1)"
     },
     {
       color: "hsla(29, 95%, 65%, 1)"
@@ -166,7 +166,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
       color: "hsla(231, 5%, 75%, 1)"
     },
     {
-      color: "hsla(231, 5%, 85%, 1))"
+      color: "hsla(231, 5%, 85%, 1)"
     },
     {
       color: "hsla(231, 5%, 95%, 1)"
@@ -331,7 +331,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
       color: "hsla(231, 5%, 75%, 0.5)"
     },
     {
-      color: "hsla(231, 5%, 85%, 0.5))"
+      color: "hsla(231, 5%, 85%, 0.5)"
     },
     {
       color: "hsla(231, 5%, 95%, 0.5)"
@@ -352,7 +352,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -370,7 +370,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -388,7 +388,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -406,7 +406,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -424,7 +424,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -442,7 +442,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -460,7 +460,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -478,7 +478,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -496,7 +496,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
     color: "hsla(231, 5%, 75%, 0.5)"
   },
   {
-    color: "hsla(231, 5%, 85%, 0.5))"
+    color: "hsla(231, 5%, 85%, 0.5)"
   },
   {
     color: "hsla(231, 5%, 95%, 0.5)"
@@ -506,18 +506,18 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
   self.sortableList = self.rainbow;
 
   var tempForSwap = null;
-  var tempIndexForSwap = null;
+  self.tempIndexForSwap = null;
 
   self.swapDot = function(item, i) {
     if (tempForSwap === null) {
       tempForSwap = item;
-      tempIndexForSwap = i;
+      self.tempIndexForSwap = i;
       console.log(tempForSwap);
     } else {
-      self.sortableList[tempIndexForSwap] = self.sortableList[i];
+      self.sortableList[self.tempIndexForSwap] = self.sortableList[i];
       self.sortableList[i] = tempForSwap;
       tempForSwap = null;
-      tempIndexForSwap = null;
+      self.tempIndexForSwap = null;
 
     }
   }
@@ -525,7 +525,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
   self.fillDot = function(item, i) {
     if(tempForSwap === null) {
       tempForSwap = item;
-      tempIndexForSwap = i;
+      self.tempIndexForSwap = i;
     } else {
       self.sortableList[i] = tempForSwap;
     }
@@ -533,7 +533,7 @@ app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', f
 
   self.clearFillData = function() {
     tempForSwap = null;
-    tempIndexForSwap = null;
+    self.tempIndexForSwap = null;
   }
 
   // Fisher-Yates Shuffle added to randomize order of colored dots

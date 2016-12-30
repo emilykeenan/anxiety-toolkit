@@ -2,7 +2,7 @@
 <div class="circle_stage" ng-show="ddc.swappingDots">
   <ul>
     <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
-      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
+      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-class="{'selected': $index === ddc.tempIndexForSwap}" ng-click="ddc.swapDot(item, $index)">
       </div>
     </li>
   </ul>
@@ -10,7 +10,7 @@
 <div class="circle_stage" ng-show="ddc.fillingDots">
   <ul>
     <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
-      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
+      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-class="{'selected': $index === ddc.tempIndexForSwap}" ng-click="ddc.fillDot(item, $index)">
       </div>
     </li>
   </ul>
