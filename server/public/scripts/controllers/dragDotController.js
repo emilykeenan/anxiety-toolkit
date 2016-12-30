@@ -580,9 +580,4 @@ self.switchToSort = function() {
   tempIndexForSwap = null;
 }
 
-self.reset = function() {
-  window.location = "/#/dragdotfidget.";
-  window.location = "/#/dragdotfidget";
-}
-
 }]);

@@ -1,25 +1,28 @@
 <div ng-include="'views/templates/nav.html'"></div>
-<div class="drag_drop_stage" ng-show="ddc.swappingDots">
+<div class="circle_stage" ng-show="ddc.swappingDots">
   <ul>
     <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
-      <div class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
+      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.swapDot(item, $index)">
       </div>
     </li>
   </ul>
 </div>
-<div class="drag_drop_stage" ng-show="ddc.fillingDots">
+<div class="circle_stage" ng-show="ddc.fillingDots">
   <ul>
     <li ng-repeat="item in ddc.sortableList track by $index" class="circle_list">
-      <div class="draggable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
+      <div class="sortable_circle" ng-style="{'background-color': item.color}" ng-click="ddc.fillDot(item, $index)">
       </div>
     </li>
   </ul>
 </div>
-<button ng-click="ddc.shuffleDots()">Shuffle</button>
-<button ng-click="ddc.switchToRainbowTheme()">Rainbow Theme</button>
-<button ng-click="ddc.switchToLightRainbowTheme()">Light Theme</button>
-<button ng-click="ddc.switchToGrayscaleTheme()">Gray Theme</button>
-<button ng-click="ddc.clearFillData()" ng-show="ddc.fillingDots">Pick a New Color</button>
-<button ng-click="ddc.switchToFill()" ng-show="ddc.swappingDots">Switch to Fill</button>
-<button ng-click="ddc.switchToSort()" ng-show="ddc.fillingDots">Switch to Sort</button>
-<button ng-click="ddc.reset()">Reset</button>
+<div class="dot_fidget_button_container">
+  <p>Themes</p>
+  <img src="/assets/images/rainbow.svg" alt="switch to rainbow theme" ng-click="ddc.switchToRainbowTheme()" class="dot_fidget_button" />
+  <img src="/assets/images/lightrainbow.svg" alt="switch to light theme" ng-click="ddc.switchToLightRainbowTheme()" class="dot_fidget_button" />
+  <img src="/assets/images/grayscale.svg" alt="switch to gray theme" ng-click="ddc.switchToGrayscaleTheme()" class="dot_fidget_button" />
+  <p>Controls</p>
+  <img src="/assets/images/shuffle.svg" alt="shuffle" ng-click="ddc.shuffleDots()" class="dot_fidget_button" />
+  <img src="/assets/images/clear.svg" ng-click="ddc.clearFillData()" ng-show="ddc.fillingDots" class="dot_fidget_button" />
+  <img src="/assets/images/fill.svg" ng-click="ddc.switchToFill()" ng-show="ddc.swappingDots" class="dot_fidget_button" />
+  <img src="/assets/images/swap.svg" ng-click="ddc.switchToSort()" ng-show="ddc.fillingDots" class="dot_fidget_button" />
+</div>
