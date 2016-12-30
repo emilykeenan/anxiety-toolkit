@@ -1,6 +1,4 @@
-app.controller('DragDotController', ['$firebaseAuth', 'DataFactory', '$route', function($firebaseAuth, DataFactory, $route) {
-
-  console.log('drag dot controller is running');
+app.controller('DotController', ['$firebaseAuth', 'DataFactory', '$route', function($firebaseAuth, DataFactory, $route) {
 
   var self = this;
 

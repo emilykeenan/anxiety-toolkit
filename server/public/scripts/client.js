@@ -24,9 +24,9 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'FidgetController',
       controllerAs: 'fc'
     })
-    .when('/dragdotfidget' ,{
-      templateUrl: '/views/templates/dragdotfidget.html',
-      controller: 'DragDotController',
+    .when('/dotfidget' ,{
+      templateUrl: '/views/templates/dotfidget.html',
+      controller: 'DotController',
       controllerAs: 'ddc'
     })
     .when('/weavefidget' ,{
