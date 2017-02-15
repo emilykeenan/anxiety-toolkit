@@ -1,8 +1,19 @@
-<nav class="nav" ng-controller="NavigationController as nc">
-  <ul>
-    <li><a href="#meditation">Meditation</a></li>
-    <li><a href="#createmeditation">Create Meditation</a></li>
-    <li><a href="#fidgets">Fidgets</a></li>
-    <li><a ng-click="nc.logOut()">Log Out</a></li>
-  </ul>
-</nav>
+<div ng-controller="NavigationController as nc">
+  <nav class="nav">
+    <ul>
+      <li><a href="#meditation">Meditation</a></li>
+      <li><a href="#createmeditation">Create Meditation</a></li>
+      <li><a href="#fidgets">Fidgets</a></li>
+      <li><a ng-click="nc.logOut()">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <nav class="nav_mobile" ng-click="nc.toggleMobileNav()">
+    <ul ng-show="nc.showMobileNav">
+      <li><a href="#meditation">Meditation</a></li>
+      <li><a href="#createmeditation">Create Meditation</a></li>
+      <li><a href="#fidgets">Fidgets</a></li>
+      <li><a ng-click="nc.logOut()">Log Out</a></li>
+    </ul>
+  </nav>
+</div>
