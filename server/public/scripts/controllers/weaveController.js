@@ -46,7 +46,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.red.width += 18.25;
     } else if (self.red.height < 100 && self.red.width > 20){
       self.red.height += 8;
-      self.red.width += 13;
+      self.red.width += 15;
     } else {
       self.red.height = 1;
       self.red.width = 2;
@@ -59,7 +59,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.orange.width += 18.25;
     } else if (self.orange.height < 100 && self.orange.width > 20){
       self.orange.height += 8;
-      self.orange.width += 13;
+      self.orange.width += 15;
     } else {
       self.orange.height = 1;
       self.orange.width = 2;
@@ -72,7 +72,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.yellow.width += 18.25;
     } else if (self.yellow.height < 100 && self.yellow.width > 20){
       self.yellow.height += 8;
-      self.yellow.width += 13;
+      self.yellow.width += 15;
     } else {
       self.yellow.height = 1;
       self.yellow.width = 2;
@@ -85,7 +85,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.green.width += 18.25;
     } else if (self.green.height < 100 && self.green.width > 20){
       self.green.height += 8;
-      self.green.width += 13;
+      self.green.width += 15;
     } else {
       self.green.height = 1;
       self.green.width = 2;
@@ -98,7 +98,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.blue.width += 18.25;
     } else if (self.blue.height < 100 && self.blue.width > 20){
       self.blue.height += 8;
-      self.blue.width += 13;
+      self.blue.width += 15;
     } else {
       self.blue.height = 1;
       self.blue.width = 2;
@@ -111,7 +111,7 @@ app.controller('WeaveController', ['$firebaseAuth', 'DataFactory', function($fir
       self.purple.width += 18.25;
     } else if (self.purple.height < 100 && self.purple.width > 20){
       self.purple.height += 8;
-      self.purple.width += 13;
+      self.purple.width += 15;
     } else {
       self.purple.height = 1;
       self.purple.width = 2;
